@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Форма Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   </head>
@@ -28,88 +28,101 @@
 			</ul>
 		</nav>	
 	</header>
+		
+		
+	<!-- <main>
+		<section>
+			<form action="https://echo.htmlacademy.ru/" class="form_search" method="get">
+				<fieldset class="cat_info">
 
-		<main class="page-main wrapper">
-				<h1 class="visually_hidden">Cat energy функциональное питание для котов</h1>
-				<section class="main-promo">
-			 		<h2 class="main-promo__title">Функциональное питание для котов</h2>
-			 		<h3 class="main-promo__slogan">Занялся собой? Займись котом!</h3>
-			 			<img src="img/index-can-mobile1.jpg" width="280" height="270" alt="Фото банки корма">
-			 		<a class="main-promo__button button" href="#">Подобрать программу</a>
-		 		</section>
 
-			<section class="purpose">
-				<h2 class="visually_hidden">Почему именно Cat energy лучший корм для котов?</h2>
-				<ul class="purpose__list">
-					<li class="purpose__item"> 
-						<h3 class="purpose__title">Похудение</h3>
-							<p class="purpose__desk">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-								<a class="purpose__link" href="#">Каталог slim</a> 
-					</li>
-					<li class="purpose__item"> 
-						<h3 class="purpose__title">Набор массы</h3>
-							<p class="purpose__desk">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-								<a class="purpose__link" href="#">Каталог pro</a>
-					</li>
-				</ul>
-			</section>
-			<section class="how-it-works">
-					<h2 class="how-it-works__title">Как это работает?</h2>
-						<ul class="how-it-works__list">
-							<li class="how-it-works__item">
-								<img src="img/how-work-icon1.png" width="60" height="60" alt="Иконка листа">
-								<p class="how-it-works__desk"> Функциональное питание содержит только полезные питательные вещества.</p>
+						<h2>Подбор программы</h2>
+						<p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+		 заголовок и параграф может быть частью fieldset, или лучше вынести в отдельный див перед формой?	 -->			
+
+
+
+				<!-- 	<label class="form_info-cat" for="cat_name">Имя:*
+					</label>
+						<input type="text" id="cat_name" required pattern="^[А-Яа-яЁё\s]+$" value="Барсик" name="cat_name"> 
+					<label class="form_info-cat" for="cat_weigth">Вес (кг):*
+					</label>
+						<input type="text" id="cat_weigth" required pattern="^[ 0-9]+$" value="7" name="cat_weigth"> 
+					<label class="form_info-cat" for="cat_age">Возраст (лет):
+					</label>
+						<input type="text" id="cat_age" required pattern="^[ 0-9]+$" value="7"  name="cat_age"> 
+				</fieldset>		
+				
+				<fieldset class="checkbox-cat_info">
+						<ul class="checkbox_item-target">
+							<li>
+								<input checked id="cat_thinner" name="type" value="hotel" type="radio">
+								 <label for="cat_thinner">Похудение</label>
 							</li>
-							<li class="how-it-works__item">
-								<img src="img/how-work-icon2.png" width="60" height="60" alt="Иконка порошка">
-								<p class="how-it-works__desk">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+							<li>
+								<input id="cat_fatter" name="type" value="hotel" type="radio">
+								 <label for="cat_fatter">Набор массы</label>
 							</li>
-							<li class="how-it-works__item">
-								<img src="img/how-work-icon3.png" width="60"
-								height="60" alt="Иконка вилки и ложки">
-								<p class="how-it-works__desk">Замените один-два приема обычной еды на наше функциональное питание.</p>
-							</li>
-							<li class="how-it-works__item">
-								<img src="img/how-work-icon4.png" width="60" height="60" alt="Иконка будильника">
-								<p class="how-it-works__desk">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+							<li>
+								<input id="cat_help" name="type" value="hotel" type="radio">
+								 <label for="cat_help">Не знаю (нужен ваш совет)</label>
 							</li>
 						</ul>
-			</section>
+				</fieldset>
 
+				<fieldset class="owner_info">
+					<legend>Контактные данные<br>
+						(владельца кота)
+					</legend>
+						<label class="owner_email" for="owner_email">E-mail:*
+						</label>
+							<input type="email" id="owner_email" required="" value="kuklachev@gmail.com" name="owner_email"> 
+						<label class="ownen_tel" for="ownen_tel">Телефон:*
+						</label>
+							<input type="text" id="ownen_tel" required="" value="8 (960) 900-60-90" name="ownen_tel">
+				</fieldset>
 
-			<!-- <h2>Живой пример</h2>
-			<p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-			<ul>
-				<li>
-					<p><strong>5 кг<br></strong><span>снижение<br>веса</span></p>
-				</li>
-				<li>
-					<p><strong>60 дней<br></strong><span>затрачено<br>времени</span></p>
-				</li>
-			</ul>
-			<p>Затраты на питание: 15 000 руб.</p>
-			<img src="img/cat-range-mobile.jpg">
-				<div>
-					<input type="range" name="range_weight">
-					<input id="range_mins" aria-label="цена от" name="range_min" type="text" value="было"> 
-						<label for="range_mins" class="visually_hidden">Было</label>
-						<input id="range_max" aria-label="цена до" name="range_max" type="text" value="стало">
-						<label for="range_max" class="visually_hidden">Стало</label>
-				</div>
-		</div>
+				<fieldset class="comment">
+					<legend>Комментарий</legend>
+						<textarea placeholder="Расскажите обо всех повадках кота" cols="15" rows="5"></textarea>
+				</fieldset>
+
+				<fieldset class="additionally">
+					<legend>Дополнительно</legend>
+						<ul class="checkbox_add_items">
+							<li>
+								<input checked id="sugarfree" name="additionally" value="sugarfree" type="checkbox">
+								 <label for="sugarfree">Сахарозаменитель</label>
+							</li>
+							<li>
+								<input id="water" name="additionally" value="water" type="checkbox">
+								 <label for="water">Питьевая вода</label>
+							</li>
+							<li>
+								<input id="milk" name="additionally" value="milk" type="checkbox">
+								 <label for="milk">Молоко</label>
+							</li>
+							<li>
+								<input id="vitamins" name="additionally" value="vitamins" type="checkbox">
+								 <label for="vitamins">Витамины</label>
+							</li>
+						</ul>
+						<button type="sumbit">Отправить заявку</button>	
+							<p>* — Обязательные поля</p>
+
+				</fieldset>
+			</form>
+		</section>
+
 
 	</main> -->
-	
-			<!-- <div>
-				<p>Приглашаем к сотрудничеству дилеров!</p>
-				<p>Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-			</div>
-			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6424676484557!2d30.32091451595357!3d59.93807468187594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fbc3bd3bd%3A0xb77609533f1f9038!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDIyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sge!4v1594817092777!5m2!1sru!2sge" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</div> -->
-		<!-- </section> -->
 
-	<footer class="page-footer">
+
+
+	
+			
+	
+			<footer class="page-footer">
 		<section class="wrapper">
 			<h2 class="page-footer__title"><strong>Cat</strong> energy</h2>
 					<h3 class="visually_hidden">Мы в социальных сетях</h3>
