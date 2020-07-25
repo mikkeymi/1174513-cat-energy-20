@@ -1,0 +1,40 @@
+
+.page-footer__box{
+  text-align: center;
+  background-color:  $basic-grey;
+}
+.social__link__name:hover{
+  opacity: 0.6;
+}
+.social__link__name:active{
+ opacity: 0.3;
+}
+.social__list{
+  list-style: none;
+}
+.social__link--vk::before{
+  display: block;
+  content: url("../img/icon-vk.svg");
+  width: 23px;
+  height: 16px;
+}
+.social__link--inst::before{
+  display: block;
+  content: url("../img/icon-insta.svg");
+  width: 16px;
+  height: 16px;
+}
+.social__link--fb::before{
+  display: block;
+  content: url("../img/icon-fb.svg");
+  width: 22px;
+  height: 22px;
+}
+.copyright__logo{
+  text-decoration: none;
+}
+.copyright__text{
+  color: $dark-gray-text;
+  font-size:16px;
+  line-height: 18px;
+}

@@ -1,2 +1,11 @@
-// Начните писать стили здесь
-body { background: red; }
+
+@import "variables.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-promo.scss";
+@import "blocks/purpose.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/catalog.scss";
+@import "blocks/show-more.scss";

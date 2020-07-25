@@ -1,0 +1,22 @@
+.show-more__title{
+    color: $ligth-black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.show-more__subtitle{
+  color: $ligth-black;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Arial;
+}
+.another-button{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+  text-align:center;
+  color: $dark-gray-text;
+  background-color: $basic-grey;
+  padding: 20px 94px 20px 94px;
+}
