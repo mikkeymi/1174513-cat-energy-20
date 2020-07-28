@@ -1,0 +1,30 @@
+.example{
+  background: #EAEAEA;
+}
+.example__value{
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+.example__value span{
+  color: $dark-gray-text;
+  text-transform: lowercase;
+  line-height: 12px;
+  font-size: 12px;
+  font-family: $base-font;
+}
+.example__subtitle{
+  text-transform: uppercase;
+  text-align: center;
+}
+.example__game-button{
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 16px;
+  align-items: center;
+  outline: none;
+  border: none;
+  background:none;
+}

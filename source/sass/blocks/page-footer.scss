@@ -1,4 +1,15 @@
-
+.page-footer__invitation{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $ligth-black;
+}
+.page-footer__address{
+  font-family: $base-font;
+  color: $dark-gray-text;
+  font-size:14px;
+  line-height: 20px;
+}
 .page-footer__box{
   text-align: center;
   background-color:  $basic-grey;

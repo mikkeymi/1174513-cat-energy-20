@@ -28,10 +28,10 @@
       </nav>
   </header>
     <main class="page-main">
-      <div class="page-main__title title_group">
-        <h1>Каталог продукции</h1>
-      </div>
       <section class="catalog">
+      <div class="page-main__title title_group">
+        <h1 class="catalog__main-title main-title">Каталог продукции</h1>
+      </div>
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -195,14 +195,13 @@
           </div>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-      </ul>
-      </section>
-      <section class="show-more">
-        <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-        <p class="show-more__subtitle">На самом деле вкусов гораздо больше!</p>
-        <a class="show-more__button another-button" href="#">Показать все
+        <li class="catalog__item">
+            <h3 class="catalog__subname">Показать еще 100500 товаров</h3>
+        <p class="catalog__table">На самом деле вкусов гораздо больше!</p>
+        <a class="another-button" href="#">Показать все
         </a>
-      </section>
+        </ul>
+     </section>
       <section class="additional">
         <h3 class="additional__main-title">Дополнительные товары</h3>
         <ul class="additional__list">
@@ -228,7 +227,7 @@
               <p class="additional__info">1 литр</p>
               <p class="additional__info">100 Р</p>
             </div>
-            <button type="additional__button button">Заказать</button>
+            <button class="additional__button button" type="button">Заказать</button>
           </li>
           <li class="additional__item">
             <h4 class="additional__product-name">Витамины</h4>

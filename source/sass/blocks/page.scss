@@ -1,6 +1,12 @@
 .page {
   height: 100%;
   font-size: 14px;
-  font-family: "PT Sans Narrow", $base-font;
+  font-family: "Oswald", $base-font;
   line-height: 18px;
+}
+.page__body{
+  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  color: $black;
 }
