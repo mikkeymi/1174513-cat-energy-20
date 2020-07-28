@@ -1,22 +1,19 @@
-@mixin test {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
 .form-box__sub{
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
-   @include test;
+    font-size: 16px;
+    line-height: 18px;
 }
 .info__style{
   text-transform: uppercase;
   color: $dark-gray-text;
-  @include test;
+  font-size: 16px;
+  line-height: 18px;
 }
 .cat-info input,
 .owner input,
 .comment textarea{
-  font-family: Oswald;
+  font-family: Oswald, $base-font;
 }
 .checkbox-cat__target,
 .additionally__list{
@@ -24,7 +21,9 @@
 }
 .checkbox-cat__label{
   color: $dark-gray;
-  @include test;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 .form__sub{
   font-size: 24px;
@@ -32,7 +31,9 @@
   color: $black;
 }
 .additionally__item label{
-  @include test;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: $black;
 }
 .form__button{

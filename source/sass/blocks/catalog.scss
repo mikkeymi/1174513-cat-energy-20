@@ -8,12 +8,12 @@
     line-height: 20px;
     align-items: center;
     color: $dark-gray;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .catalog__subname{
   color: $ligth-black;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .catalog__table{
@@ -21,7 +21,7 @@
   font-size: 12px;
   line-height: 16px;
   font-family: $base-font;
-  font-weight: normal;
+  font-weight: 400;
 }
 .catalog__button{
   padding: 20px 109px 20px 109px;
