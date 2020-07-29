@@ -1,5 +1,5 @@
-.button{
-  font-family: inherit, $base-font;
+.button {
+  font-family: inherit;
   border: none;
   color: $white;
   background-color: $accent-green;
@@ -10,9 +10,11 @@
   text-align: center;
   padding: 14px 26px 14px 26px;
 }
-.button:hover{
- background-color: #5EAA2F;
+
+.button:hover {
+  background-color: #5eaa2f;
 }
-.button:active{
- color: rgba($white, 0.3)
+
+.button:active {
+  color: rgba($white, 0.3);
 }
