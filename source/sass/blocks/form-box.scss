@@ -1,0 +1,54 @@
+.form-box__sub {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.info__style {
+  text-transform: uppercase;
+  color: $dark-gray-text;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.cat-info input,
+.owner input,
+.comment textarea {
+  font-family: "Oswald", sans-serif, $base-font;
+}
+
+.checkbox-cat__target,
+.additionally__list {
+  list-style: none;
+}
+
+.checkbox-cat__label {
+  color: $dark-gray;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__sub {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.additionally__item label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.form__button {
+  padding: 7px 44px 7px 44px;
+}
+
+.form__note {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $base-font;
+}

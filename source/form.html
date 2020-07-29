@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Форма Кэт энерджи</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
 
@@ -30,23 +30,23 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__title">
-      <h1>Подбор программы</h1>
-      <h2>Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+    <section class="form-box">
+    <div class="form-box__case">
+      <h1 class="form-box__title main-title">Подбор программы</h1>
+      <h2 class="form-box__sub">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
     </div>
-    <section>
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="cat-info">
           <legend class="visually-hidden">Информация о коте</legend>
-          <label class="cat-info__label" for="cat_name">Имя:*
+          <label class="cat-info__label info__style" for="cat_name">Имя:*
           </label>
-          <input class="cat-info__input" type="text" id="cat_name" required pattern="^[А-Яа-яЁё\s]+$" value="Барсик" name="cat_name">
-          <label class="cat-info__label" for="cat_weigth">Вес (кг):*
+          <input class="cat-info__input info__style" type="text" id="cat_name" required pattern="^[А-Яа-яЁё\s]+$" value="Барсик" name="cat_name">
+          <label class="cat-info__label info__style" for="cat_weigth">Вес (кг):*
           </label>
-            <input class="cat-info__input" type="number" min="0" id="cat_weigth" required value="7" name="cat_weigth">
-          <label class="cat-info__label" for="cat_age">Возраст (лет):
+            <input class="cat-info__input info__style" type="number" min="0" id="cat_weigth" required value="7" name="cat_weigth">
+          <label class="cat-info__label info__style" for="cat_age">Возраст (лет):
           </label>
-            <input class="cat-info__input" type="number" min="0" id="cat_age" required value="7"  name="cat_age">
+            <input class="cat-info__input info__style" type="number" min="0" id="cat_age" required value="7"  name="cat_age">
         </fieldset>
         <fieldset class="checkbox-cat">
           <legend class="visually-hidden">Мотивация кота</legend>
@@ -67,37 +67,37 @@
         </fieldset>
 
         <fieldset class="owner">
-          <legend class="owner__subtitle">Контактные данные<br>
+          <legend class="owner__subtitle form__sub">Контактные данные<br>
             (владельца кота)
           </legend>
-            <label class="owner__label" for="owner__email">E-mail:*
+            <label class="owner__label info__style" for="owner__email">E-mail:*
             </label>
-            <input class="owner__input" type="email" id="owner-email" required="" value="kuklachev@gmail.com" name="owner-email">
-            <label class="owner__label" for="ownen-tel">Телефон:*
+            <input class="owner__input info__style" type="email" id="owner-email" required="" value="kuklachev@gmail.com" name="owner-email">
+            <label class="owner__label info__style" for="ownen-tel">Телефон:*
             </label>
-            <input class="owner__input" type="text" id="ownen-tel" required="" value="8 (960) 900-60-90" name="ownen-tel">
+            <input class="owner__input info__style" type="text" id="ownen-tel" required="" value="8 (960) 900-60-90" name="ownen-tel">
         </fieldset>
 
         <div class="comment">
-          <label class="comment__subtitle" for="comment">Комментарий</label>
+          <label class="comment__subtitle form__sub" for="comment">Комментарий</label>
             <textarea class="comment__textarea" id="comment" name="text-comment" placeholder="Расскажите обо всех повадках кота" cols="15" rows="5"></textarea>
         </div>
         <fieldset class="additionally">
-          <legend class="additionally__subtitle">Дополнительно</legend>
+          <legend class="additionally__subtitle form__sub">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <input class="additionally__input" checked id="sugarfree" name="additionally" value="sugarfree" type="checkbox">
                 <label class="additionally__label" for="sugarfree">Сахарозаменитель</label>
-              </li>
-              <li>
+              </li class="additionally__item">
+              <li class="additionally__item">
                 <input class="additionally__input" id="water" name="additionally" value="water" type="checkbox">
                 <label class="additionally__label" for="water">Питьевая вода</label>
               </li>
-              <li>
+              <li class="additionally__item">
                 <input class="additionally__input" id="milk" name="additionally" value="milk" type="checkbox">
                 <label class="additionally__label" for="milk">Молоко</label>
               </li>
-              <li>
+              <li class="additionally__item">
                 <input class="additionally__input" id="vitamins" name="additionally" value="vitamins" type="checkbox">
                 <label class="additionally__label" for="vitamins">Витамины</label>
               </li>

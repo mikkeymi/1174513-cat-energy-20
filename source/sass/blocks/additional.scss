@@ -1,0 +1,45 @@
+.additional__list {
+  list-style: none;
+}
+
+.additional__main-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.additional__product-name {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $dark-gray;
+}
+
+.additional__info {
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-gray-text;
+}
+
+.additional__button {
+  font-family: "Oswald", sans-serif;
+  padding: 7px 65px 7px 64px;
+}
+
+.gift-to-order__desc {
+  font-family: $base-font;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.gift-to-order {
+  height: 289px;
+  width: 280px;
+  background-color: $accent-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

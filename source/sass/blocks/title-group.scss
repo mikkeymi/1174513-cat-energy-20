@@ -1,6 +1,14 @@
-.title-group{
+.main-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
   color: $black;
-  text-align: center;
-  font-size:36px;
 }
 
+.title-group {
+  color: $black;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}

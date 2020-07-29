@@ -1,14 +1,14 @@
-body {
-  min-height: 100%;
-  margin: 0;
-  background-color: $white;
-  color: $black;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }
-
