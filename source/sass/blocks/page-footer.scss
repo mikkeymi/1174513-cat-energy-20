@@ -15,6 +15,11 @@
 .page-footer__box {
   text-align: center;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 150px;
+  }
 }
 
 .social__link__name:hover {
@@ -27,6 +32,7 @@
 
 .social__list {
   list-style: none;
+  display: flex;
 }
 
 .social__link--vk::before {
@@ -52,6 +58,14 @@
 
 .copyright__logo {
   text-decoration: none;
+}
+
+.page-footer__copyright p {
+  display: inline-block;
+}
+
+.page-footer__copyright {
+  display: flesx;
 }
 
 .copyright__text {

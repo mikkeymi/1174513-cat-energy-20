@@ -1,5 +1,9 @@
 .main-nav__list {
   color: black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -26,4 +30,21 @@
 
 .site-list__item--active {
   border-bottom: 1px solid $accent-green;
+}
+
+.page-header {
+  min-height: 40px;
+  display: flex;
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    width: 174px;
+
+    @media (min-width: $desktop-width) {
+      height: 59px;
+      width: 202px;
+    }
+  }
 }
