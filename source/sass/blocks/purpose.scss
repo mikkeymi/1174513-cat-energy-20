@@ -19,15 +19,3 @@
   text-transform: uppercase;
   color: $black;
 }
-
-.purpose__item {
-  min-height: 266px;
-  // не уверена что нужно указывать высоту, пытаюсь сделать по демкам
-  @media (min-width: $tablet-width) {
-    min-height: 372px;
-
-    @media (min-width: $desktop-width) {
-      min-height: 374px;
-    }
-  }
-}

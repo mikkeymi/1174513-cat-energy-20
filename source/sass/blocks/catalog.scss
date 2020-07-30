@@ -16,10 +16,11 @@
 .catalog__item {
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
-    width: 324px;
+    max-width: 324px;
+    margin: 0 auto;
 
     @media (min-width: $desktop-width) {
-      width: 245px;
+      max-width: 245px;
     }
   }
 }
@@ -31,6 +32,17 @@
   color: $dark-gray;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 78px;
+    margin-right: 72px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 53px;
+      margin-right: 47px;
+    }
+  }
 }
 
 .catalog__subname {
@@ -45,11 +57,13 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .catalog__button {
   padding: 20px 109px 20px 109px;
   display: inline-block;
+  width: 100% - 20%;
 }
 
 .another-button {
@@ -62,4 +76,8 @@
   color: $dark-gray-text;
   background-color: $basic-grey;
   padding: 20px 94px 20px 94px;
+}
+
+.catalog__center {
+  text-align: center;
 }
