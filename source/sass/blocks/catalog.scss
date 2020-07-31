@@ -63,6 +63,16 @@
 .catalog__button {
   padding: 20px 109px 20px 109px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px 10px 93px;
+    margin-left: 39px;
+    margin-right: 37px;
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 53px 10px 53px;
+    }
+  }
 }
 
 .another-button {
