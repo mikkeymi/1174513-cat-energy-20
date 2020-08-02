@@ -1,3 +1,7 @@
+.additional {
+  @include wrapper;
+}
+
 .additional__list {
   list-style: none;
 }

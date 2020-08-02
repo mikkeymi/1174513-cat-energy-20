@@ -1,3 +1,7 @@
+.catalog {
+  @include wrapper;
+}
+
 .catalog__list {
   list-style: none;
   padding: 0;
@@ -18,10 +22,10 @@
     background-color: $basic-grey;
     max-width: 324px;
     margin: 0 auto;
+  }
 
-    @media (min-width: $desktop-width) {
-      max-width: 245px;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
   }
 }
 
@@ -37,11 +41,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 78px;
     margin-right: 72px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-left: 53px;
-      margin-right: 47px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: 53px;
+    margin-right: 47px;
   }
 }
 
@@ -68,10 +72,10 @@
     padding: 10px 93px 10px 93px;
     margin-left: 39px;
     margin-right: 37px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 10px 53px 10px 53px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px 10px 53px;
   }
 }
 

@@ -1,7 +1,7 @@
 @import "variables.scss";
+@import "blocks/mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
-@import "blocks/wrapper.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-promo.scss";
@@ -16,5 +16,6 @@
 @import "blocks/example.scss";
 @import "blocks/additional.scss";
 @import "blocks/form-box.scss";
-// @import "blocks/wrapper.scss";
-// @import "blocks/wrapper.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
+// @import "blocks/social.scss";

@@ -1,3 +1,7 @@
+.purpose {
+  @include wrapper;
+}
+
 .purpose__list {
   background-color: $basic-grey;
   list-style: none;
