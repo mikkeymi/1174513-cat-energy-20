@@ -1,6 +1,14 @@
+.purpose {
+  @include wrapper;
+}
+
 .purpose__list {
   background-color: $basic-grey;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .purpose__title {

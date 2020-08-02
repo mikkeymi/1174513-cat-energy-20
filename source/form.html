@@ -7,8 +7,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-
-
       <header class="page-header">
     <a class="page-header__logo" href="#">
       <img src="img/logo-mobile.svg" width="170" height="34" alt="Лого Кэт Энерджи">
@@ -30,10 +28,10 @@
   </header>
 
   <main class="page-main">
+    <h1 class="main-title">Подбор программы</h1>
     <section class="form-box">
     <div class="form-box__case">
-      <h1 class="form-box__title main-title">Подбор программы</h1>
-      <h2 class="form-box__sub">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <p class="form-box__sub">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="cat-info">
@@ -60,7 +58,7 @@
                 <label class="checkbox-cat__label" for="cat_fatter">Набор массы</label>
               </li>
               <li>
-                <input lass="checkbox-cat__input" id="cat_help" name="type" value="hotel" type="radio">
+                <input class="checkbox-cat__input" id="cat_help" name="type" value="hotel" type="radio">
                 <label class="checkbox-cat__label" for="cat_help">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -88,7 +86,7 @@
               <li class="additionally__item">
                 <input class="additionally__input" checked id="sugarfree" name="additionally" value="sugarfree" type="checkbox">
                 <label class="additionally__label" for="sugarfree">Сахарозаменитель</label>
-              </li class="additionally__item">
+              </li>
               <li class="additionally__item">
                 <input class="additionally__input" id="water" name="additionally" value="water" type="checkbox">
                 <label class="additionally__label" for="water">Питьевая вода</label>
@@ -103,7 +101,7 @@
               </li>
             </ul>
         </fieldset>
-        <button class="button form__button" type="sumbit">Отправить заявку</button>
+        <button class="button form__button" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
       </form>
     </section>
@@ -114,23 +112,24 @@
     <p class="page-footer__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
   </div>
   <div class="page-footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6424676484557!2d30.32091451595357!3d59.93807468187594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fbc3bd3bd%3A0xb77609533f1f9038!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDIyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sge!4v1594817092777!5m2!1sru!2sge" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6424676484557!2d30.32091451595357!3d59.93807468187594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fbc3bd3bd%3A0xb77609533f1f9038!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDIyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sge!4v1594817092777!5m2!1sru!2sge" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 <div class="page-footer__box">
-<a class="social__link__name" href="#">
+<div class="page-footer__wrapper">
+  <a class="social__link__name" href="#">
   <img src="img/logo-name.png" width="128" height="24" alt="Кэт Энерджи">
 </a>
-    <h3 class="visually-hidden">Мы в социальных сетях</h3>
+  <h3 class="visually-hidden">Мы в социальных сетях</h3>
 <div class="page-footer__social social">
   <ul class="page-footer social__list">
   <li>
     <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
   </li>
   <li>
-  <a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+    <a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
   </li>
   <li>
-  <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a>
+    <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a>
   </li>
   </ul>
 </div>
@@ -141,7 +140,7 @@
   </a>
 </div>
 </div>
+</div>
   </footer>
-
   </body>
-</html>
+  </html>

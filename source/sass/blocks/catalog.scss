@@ -1,7 +1,32 @@
+.catalog {
+  @include wrapper;
+}
+
 .catalog__list {
   list-style: none;
-  // margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+    max-width: 324px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
 }
 
 .catalog__name {
@@ -11,6 +36,17 @@
   color: $dark-gray;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 78px;
+    margin-right: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 53px;
+    margin-right: 47px;
+  }
 }
 
 .catalog__subname {
@@ -25,11 +61,22 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .catalog__button {
   padding: 20px 109px 20px 109px;
-  display: inline-block;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px 10px 93px;
+    margin-left: 39px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px 10px 53px;
+  }
 }
 
 .another-button {
@@ -42,4 +89,8 @@
   color: $dark-gray-text;
   background-color: $basic-grey;
   padding: 20px 94px 20px 94px;
+}
+
+.catalog__center {
+  text-align: center;
 }
