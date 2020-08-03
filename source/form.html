@@ -34,18 +34,22 @@
       <p class="form-box__sub">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form-box__grid">
         <fieldset class="cat-info">
           <legend class="visually-hidden">Информация о коте</legend>
-          <label class="cat-info__label info__style" for="cat_name">Имя:*
+          <label class="cat-info__label info__style">
+            Имя:*
+            <input class="cat-info__input info__style" type="text" required pattern="^[А-Яа-яЁё\s]+$" value="Барсик" name="cat_name">
           </label>
-          <input class="cat-info__input info__style" type="text" id="cat_name" required pattern="^[А-Яа-яЁё\s]+$" value="Барсик" name="cat_name">
-          <label class="cat-info__label info__style" for="cat_weigth">Вес (кг):*
+          <label class="cat-info__label info__style">Вес (кг):*
+            <input class="cat-info__input info__style" type="number" min="0" required value="7" name="cat_weigth">
           </label>
-            <input class="cat-info__input info__style" type="number" min="0" id="cat_weigth" required value="7" name="cat_weigth">
-          <label class="cat-info__label info__style" for="cat_age">Возраст (лет):
+          <label class="cat-info__label info__style">
+            Возраст (лет):
+            <input class="cat-info__input info__style" type="number" min="0" required value="7"  name="cat_age">
           </label>
-            <input class="cat-info__input info__style" type="number" min="0" id="cat_age" required value="7"  name="cat_age">
         </fieldset>
+
         <fieldset class="checkbox-cat">
           <legend class="visually-hidden">Мотивация кота</legend>
             <ul class="checkbox-cat__target">
@@ -62,18 +66,21 @@
                 <label class="checkbox-cat__label" for="cat_help">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
+          </div>
         </fieldset>
 
         <fieldset class="owner">
           <legend class="owner__subtitle form__sub">Контактные данные<br>
             (владельца кота)
           </legend>
-            <label class="owner__label info__style" for="owner__email">E-mail:*
+          <div class="owner__box">
+            <label class="owner__label info__style" >E-mail:*
+              <input class="owner__input info__style" type="email" required="" value="kuklachev@gmail.com" name="owner-email">
             </label>
-            <input class="owner__input info__style" type="email" id="owner-email" required="" value="kuklachev@gmail.com" name="owner-email">
-            <label class="owner__label info__style" for="ownen-tel">Телефон:*
+            <label class="owner__label info__style">Телефон:*
+              <input class="owner__input info__style" type="text"  required="" value="8 (960) 900-60-90" name="ownen-tel">
             </label>
-            <input class="owner__input info__style" type="text" id="ownen-tel" required="" value="8 (960) 900-60-90" name="ownen-tel">
+          </div>
         </fieldset>
 
         <div class="comment">
@@ -101,8 +108,10 @@
               </li>
             </ul>
         </fieldset>
+        <div class="form-note__box">
         <button class="button form__button" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>

@@ -2,6 +2,18 @@
   @include wrapper;
 }
 
+.form-box fieldset {
+  border: none;
+  // временно
+}
+
+.form-box__grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form-box__sub {
   font-weight: 400;
   text-transform: uppercase;
@@ -22,9 +34,40 @@
   font-family: "Oswald", sans-serif, $base-font;
 }
 
+.cat-info__label {
+  display: block;
+}
+
+.cat-info {
+  width: 268px;
+}
+
+.cat-info__label > input {
+  // width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    // не знаю, нужно чтобы поле растягивалось на оставшуюся длинну
+    // но инпут переносится
+  }
+}
+
+.owner__box label {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    // здесь можно оставить так и добавить отступы или лучше
+    // флекс или грид использовать
+  }
+}
+
 .checkbox-cat__target,
 .additionally__list {
   list-style: none;
+  padding: 0;
 }
 
 .checkbox-cat__label {
@@ -40,6 +83,48 @@
   color: $black;
 }
 
+.comment textarea {
+  width: 280px;
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    min-height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    min-height: 174px;
+  }
+}
+
+.additionally__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form-note__box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form__note {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $base-font;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .additionally__item label {
   font-size: 16px;
   line-height: 18px;
@@ -49,10 +134,4 @@
 
 .form__button {
   padding: 7px 44px 7px 44px;
-}
-
-.form__note {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: $base-font;
 }

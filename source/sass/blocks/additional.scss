@@ -2,8 +2,29 @@
   @include wrapper;
 }
 
+.additional__flex {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .additional__list {
   list-style: none;
+  padding: 0;
+}
+
+.additional__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional__item h4 {
+  margin: 0;
 }
 
 .additional__main-title {
@@ -20,6 +41,11 @@
   color: $dark-gray;
 }
 
+.additional__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .additional__info {
   font-family: $base-font;
   font-size: 14px;
@@ -30,6 +56,13 @@
 .additional__button {
   font-family: "Oswald", sans-serif;
   padding: 7px 65px 7px 64px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    // как тут кнопку убрать из флекса и перенести вниз,
+    // думала вынесли за li, но она нужна там для desktop
+  }
 }
 
 .gift-to-order__desc {
@@ -37,6 +70,14 @@
   color: $white;
   font-size: 16px;
   line-height: 20px;
+  width: 161px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    margin-top: 63px;
+    text-align: left;
+  }
 }
 
 .gift-to-order {
@@ -46,4 +87,25 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 245px;
+    height: 289px;
+    padding-left: 36px;
+    padding-right: 42px;
+    text-align: center;
+    margin-left: 79px;
+  }
 }

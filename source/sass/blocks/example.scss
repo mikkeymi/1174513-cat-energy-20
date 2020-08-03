@@ -4,6 +4,32 @@
 
 .example__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+// придумала сделать так, но
+// тут правильно покрасить заголовок и часть картинки не получится
+
+.example__block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.example__block__flex {
+  @media (min-width: $mobile-width-only) {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .example__value {
@@ -24,7 +50,10 @@
 
 .example__subtitle {
   text-transform: uppercase;
-  text-align: center;
+}
+
+.example__game__buttons {
+  display: flex;
 }
 
 .example__game-button {
@@ -35,4 +64,8 @@
   outline: none;
   border: none;
   background: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
