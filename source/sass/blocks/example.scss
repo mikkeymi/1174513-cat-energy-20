@@ -9,8 +9,6 @@
     display: flex;
   }
 }
-// придумала сделать так, но
-// тут правильно покрасить заголовок и часть картинки не получится
 
 .example__block {
   @media (min-width: $tablet-width) {
@@ -22,12 +20,8 @@
   }
 }
 
-.example__block__flex {
+.example__block-flex {
   @media (min-width: $mobile-width-only) {
-    display: flex;
-  }
-
-  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
@@ -52,7 +46,7 @@
   text-transform: uppercase;
 }
 
-.example__game__buttons {
+.example__game--buttons {
   display: flex;
 }
 

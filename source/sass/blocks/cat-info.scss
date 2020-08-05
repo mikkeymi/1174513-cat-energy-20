@@ -1,0 +1,16 @@
+.cat-info__label {
+  display: block;
+}
+
+.cat-info {
+  width: 268px;
+}
+
+.cat-info__label > input {
+  // width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    // flex-grow:
+  }
+}

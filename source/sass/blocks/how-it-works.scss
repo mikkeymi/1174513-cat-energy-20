@@ -1,5 +1,10 @@
+.how-it-works {
+  @include wrapper;
+}
+
 .how-it-works__list {
   list-style: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;

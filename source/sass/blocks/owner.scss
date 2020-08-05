@@ -1,0 +1,15 @@
+.owner__box {
+   @media (min-width: $tablet-width) {
+    display: block;
+   }
+
+   @media (min-width: $desktop-width) {
+      display: flex;
+  }
+}
+
+.owner__box label {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
