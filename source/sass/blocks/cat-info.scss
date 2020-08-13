@@ -1,16 +1,11 @@
 .cat-info__label {
-  display: block;
+  display: flex;
 }
 
 .cat-info {
-  width: 268px;
+  width: 100%;
 }
 
 .cat-info__label > input {
-  // width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 70%;
-    // flex-grow:
-  }
+  flex-grow: 1;
 }

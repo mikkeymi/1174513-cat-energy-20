@@ -4,12 +4,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.owner__box label {
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
+.owner__label {
+  display: flex;
+}
+
+.owner__box input {
+  flex-grow: 1;
 }
