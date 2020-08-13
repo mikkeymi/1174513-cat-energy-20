@@ -1,10 +1,10 @@
 .owner__box {
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
-      display: flex;
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 

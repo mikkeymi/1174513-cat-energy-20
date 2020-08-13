@@ -4,7 +4,21 @@
 
 .form-box fieldset {
   border: none;
-  // временно
+}
+
+.form {
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-box__main-title {
+  @include wrapper;
 }
 
 .form-box__grid {
@@ -28,8 +42,9 @@
   line-height: 18px;
 }
 
-.form input, textarea {
-  font-family: "Oswald", $base-font;
+.form input,
+.form textarea {
+  font-family: "Oswald", sans-serif, $base-font;
 }
 
 .form__sub {
@@ -38,7 +53,7 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-  font-size: 36px;
-  line-height: 36px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }

@@ -7,10 +7,6 @@
     background-color: $white;
     background-image: none;
   }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
 }
 
 .main-promo__box {
@@ -38,9 +34,15 @@
   color: $white;
   text-align: center;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     color: $black;
     text-align: left;
+  }
+}
+
+.main-promo img {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -50,9 +52,7 @@
   @media (min-width: $tablet-width) {
     width: 244px;
   }
-
-  @media (min-width: $desktop-width) {
-    // display: inline-block;
-    // перенести кнопку
-    }
 }
+//   @media (min-width: $desktop-width) {
+//   }
+// }
