@@ -4,6 +4,26 @@
 
 .example__wrapper {
   @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.example__block-flex {
+  @media (min-width: $mobile-width-only) {
+    display: flex;
+  }
 }
 
 .example__value {
@@ -24,7 +44,10 @@
 
 .example__subtitle {
   text-transform: uppercase;
-  text-align: center;
+}
+
+.example__game--buttons {
+  display: flex;
 }
 
 .example__game-button {
@@ -35,4 +58,8 @@
   outline: none;
   border: none;
   background: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

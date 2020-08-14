@@ -1,0 +1,18 @@
+.owner__box {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.owner__label {
+  display: flex;
+}
+
+.owner__box input {
+  flex-grow: 1;
+}

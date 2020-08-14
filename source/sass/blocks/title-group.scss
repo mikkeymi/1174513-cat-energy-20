@@ -3,12 +3,21 @@
   line-height: 36px;
   font-weight: 400;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title-group {
   color: $black;
-  text-align: center;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

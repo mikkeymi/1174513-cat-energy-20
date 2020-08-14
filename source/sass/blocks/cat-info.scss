@@ -1,0 +1,12 @@
+.cat-info__label {
+  display: flex;
+}
+
+.cat-info {
+  width: 100%;
+}
+
+.cat-info__label > input {
+  flex-grow: 1;
+  min-width: 400px;
+}
