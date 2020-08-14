@@ -11,6 +11,7 @@
 
 .main-promo__box {
   @include wrapper;
+
   @media (min-width: $tablet-width) {
     width: 414px;
   }
