@@ -1,17 +1,8 @@
 .page-header {
+  @include wrapper;
+
   @media (min-width: $tablet-width) {
     display: flex;
-
-    @include wrapper;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/index-can-desktop@1x.png");
-    background-repeat: no-repeat;
-    // position: absolute;
-    // z-index: 3;
-    // тут нужно отменить враппер, как и не помню разметку
-    // и как мы сделали фон корма))
   }
 }
 
@@ -29,7 +20,6 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../index-background-desktop@1x.jpg");
-    //  и фон на половину
   }
 }
 
@@ -55,7 +45,7 @@
     border-top: 1px solid #e6e6e6;
   }
 
-  &:nth-child(3) {
+  &:last-child {
     border: none;
   }
 
