@@ -1,7 +1,7 @@
 .main-promo {
-  @include wrapper;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -10,6 +10,7 @@
 }
 
 .main-promo__box {
+  @include wrapper;
   @media (min-width: $tablet-width) {
     width: 414px;
   }
