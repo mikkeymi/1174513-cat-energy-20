@@ -2,6 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -13,7 +14,7 @@
   @include wrapper;
 
   @media (min-width: $tablet-width) {
-    width: 414px;
+    padding-left: 50px;
   }
 }
 
@@ -22,10 +23,15 @@
   color: $white;
   line-height: 36px;
   text-align: center;
+  padding-top: 27px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     color: $black;
     text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    width: 450px;
   }
 }
 
@@ -35,16 +41,25 @@
   text-transform: uppercase;
   color: $white;
   text-align: center;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black;
+    font-size: 20px;
+    line-height: 20px;
     text-align: left;
+    padding-top: 41px;
   }
 }
 
-.main-promo img {
-  @media (min-width: $desktop-width) {
-    // display: none;
+.main-promo__img {
+  @media (min-width: $tablet-width) {
+    // position: absolute;
+    width: 709px;
+    height: 609px;
+    top: 130px;
+    z-index: -1;
+    // тут сложно)) конпку может спозиционировать абсолютно, // или картинку?
   }
 }
 

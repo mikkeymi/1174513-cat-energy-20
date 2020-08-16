@@ -3,7 +3,8 @@
 }
 
 .purpose__list {
-  background-color: $basic-grey;
+  padding: 0;
+  padding-top: 22px;
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -11,15 +12,57 @@
   }
 }
 
+.purpose__item {
+  min-width: 280px;
+  margin-bottom: 20px;
+  background-color: $basic-grey;
+  padding-left: 20px;
+  padding-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 780px;
+    margin-bottom: 30px;
+    padding-left: 52px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    margin-right: 80px;
+    margin-bottom: 0;
+    // min-width: 570px;
+  }
+}
+
 .purpose__title {
+  margin: 0;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-top: 77px;
+  }
+}
+
+.purpose__desk {
+  margin-top: 29px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
   }
 }
 
@@ -27,9 +70,19 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 59px;
   }
 }

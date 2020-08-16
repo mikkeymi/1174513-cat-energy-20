@@ -10,9 +10,22 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.how-it-works__title {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.how-it-works__item {
+  padding-top: 20px;
+
+  &:last-child {
+    margin-bottom: 42px;
   }
 }

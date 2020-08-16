@@ -1,11 +1,12 @@
 .catalog {
   @include wrapper;
+  // перенести его из за линий
 }
 
 .catalog__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -18,14 +19,23 @@
 }
 
 .catalog__item {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  border-top: 1px solid #ebebeb;
+  margin: 0 auto;
+
+
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
-    max-width: 324px;
+    width: 324px;
     margin: 0 auto;
+    margin-bottom: 59px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 245px;
+    width: 245px;
+    margin-bottom: 63px;
   }
 }
 
@@ -37,15 +47,21 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  width: 76px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     margin-left: 78px;
     margin-right: 72px;
+    text-align: center;
+    margin-top: 34px;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 53px;
     margin-right: 47px;
+    margin-top: 46px;
   }
 }
 
@@ -53,6 +69,12 @@
   color: $ligth-black;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .catalog__table {
@@ -61,7 +83,38 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
-  margin: 0 auto;
+  margin-top: 14px;
+  width: 141px;
+  border-collapse: collapse;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 21px;
+    margin-bottom: 33px;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
+}
+
+.catalog__table td:nth-child(1n) {
+  text-align: left;
+}
+
+.catalog__table td:nth-child(2n) {
+  text-align: right;
+}
+
+.catalog__table td {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .catalog__button {
@@ -79,18 +132,30 @@
   }
 }
 
-.another-button {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: $dark-gray-text;
-  background-color: $basic-grey;
-  padding: 20px 94px 20px 94px;
-}
 
 .catalog__center {
   text-align: center;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.another-version {
+  background-color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+
+.catalog__another-subtitle {
+  width: auto;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+    width: 167px;
+  }
 }
