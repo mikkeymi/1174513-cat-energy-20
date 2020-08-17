@@ -1,43 +1,32 @@
 .page-header {
-  @include wrapper;
   position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 708px;
+    margin: 0 auto;
+    align-items: center;
     margin-top: 54px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 70px;
-  }
-}
-
-.main-nav__list {
-  @include wrapper;
-  color: black;
-  margin: 0 auto;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-around;
-    width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../index-background-desktop@1x.jpg");
+    width: 1220px;
   }
 }
 
 .page-header__box {
   display: flex;
   padding-bottom: 17px;
-
-  @include wrapper;
+  width: 280px;
+  margin: 0 auto;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -111,78 +100,14 @@
   }
 }
 
-.main-nav__button,
-.main-nav__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav__toggle {
-  margin-top: 15px;
-  top: 20px;
-  left: 400px;
-  z-index: 2;
-  display: block;
-  width: 26px;
-  height: 16px;
-  cursor: pointer;
+.page-header__button {
+  position: relative;
+  background-color: transparent;
   border: none;
-}
-
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 220px;
-  width: 24px;
-  height: 1px;
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  width: 40px;
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade($black, 30%),
-    0 16px 0 0 fade($black, 30%);
-}
-
-.main-nav--opened .main-nav__toggle {
-  top: 15;
-  right: auto;
-  left: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 400px;
-    // позиционирование
-    width: 18px;
-    height: 2px;
-    background-color: $black;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-    // ?????
   }
 }

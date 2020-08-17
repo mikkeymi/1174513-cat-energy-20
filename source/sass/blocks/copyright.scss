@@ -1,11 +1,20 @@
-.copyright__logo {
-  text-decoration: none;
-}
-
-.page-footer__copyright p {
-  display: inline-block;
-}
-
-.page-footer__copyright {
+.copyright__logo-html {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444444;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
+.copyright__logo-html svg path {
+  fill: #444444;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  }
 }
