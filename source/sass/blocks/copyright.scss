@@ -7,12 +7,27 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+    opacity: 1;
+  }
+}
+
+.copyright__logo-html p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+  padding-right: 22px;
   }
 }
 
 .copyright__logo-html svg path {
   fill: #444444;
   opacity: 0.3;
+  width: 27px;
+  height: 34px;
 
   @media (min-width: $tablet-width) {
     opacity: 1;

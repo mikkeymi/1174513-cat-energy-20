@@ -21,8 +21,9 @@
 .catalog__item {
   padding-top: 19px;
   padding-bottom: 25px;
-  border-top: 1px solid #ebebeb;
+  // border-top: 1px solid #ebebeb;
   margin: 0 auto;
+  position: relative;
 
 
   @media (min-width: $tablet-width) {
@@ -36,6 +37,21 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     margin-bottom: 63px;
+  }
+}
+
+.catalog__item::before {
+  content: "";
+  background-color: red;
+  height: 1px;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

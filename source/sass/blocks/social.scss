@@ -1,15 +1,23 @@
+.social__link__name img{
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
 .social__list {
+  padding: 0;
   list-style: none;
   margin: 0 auto;
   width: 280px;
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
+  text-align: center;
+  // не выравниваются((
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -18,7 +26,16 @@
 }
 
 .social__list li {
-  margin-right: 20px;
+  margin: 0 15px;
+
+    &:nth-child(1) {
+  // margin-right: 30px;
+
+}
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+
+  }
 }
 
 .social__link--vk::before {
