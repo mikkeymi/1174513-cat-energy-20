@@ -9,14 +9,17 @@
   line-height: 18px;
   text-align: center;
   width: 280px;
+  height: 40px;
   padding-top: 13px;
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     width: 248px;
+    height: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
+    height: 40px;
   }
 }

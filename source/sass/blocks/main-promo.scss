@@ -14,7 +14,7 @@
   @include wrapper;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
+    padding-left: 84px;
   }
 }
 
@@ -23,8 +23,9 @@
   color: $white;
   line-height: 36px;
   text-align: center;
-  padding-top: 27px;
+  padding-top: 55px;
   margin: 0;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -32,6 +33,10 @@
     font-size: 60px;
     line-height: 60px;
     width: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
   }
 }
 
@@ -48,7 +53,6 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    padding-top: 41px;
   }
 }
 

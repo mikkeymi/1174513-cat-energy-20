@@ -1,10 +1,11 @@
-.social__link__name img{
+.social__link__name img {
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
+
 .social__list {
   padding: 0;
   list-style: none;
@@ -12,29 +13,35 @@
   width: 280px;
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   text-align: center;
-  // не выравниваются((
+  // align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
+    // не хотят стоять в 1  линию
   }
 }
 
-.social__list li {
+.social__link {
+  display: flex;
+  width: 40px;
+  height: 40px;
   margin: 0 15px;
+  align-content: center;
+  align-items: center;
 
-    &:nth-child(1) {
-  // margin-right: 30px;
-
-}
   @media (min-width: $tablet-width) {
-    margin-right: 28px;
+    width: auto;
+    height: auto;
+  }
 
+  @media (min-width: $desktop-width) {
+    margin: 0 20px;
   }
 }
 
@@ -43,10 +50,12 @@
   content: url("../img/icon-vk.svg");
   width: 23px;
   height: 16px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 29px;
     height: 24px;
+    margin-left: 0;
   }
 }
 
@@ -55,9 +64,11 @@
   content: url("../img/icon-insta.svg");
   width: 16px;
   height: 16px;
+  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
     width: 22px;
+    margin-left: 0;
   }
 }
 

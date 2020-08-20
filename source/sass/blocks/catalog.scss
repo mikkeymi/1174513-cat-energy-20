@@ -1,6 +1,5 @@
 .catalog {
   @include wrapper;
-  // перенести его из за линий
 }
 
 .catalog__list {
@@ -9,19 +8,21 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin-top: 91px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
 .catalog__item {
   padding-top: 19px;
   padding-bottom: 25px;
-  // border-top: 1px solid #ebebeb;
   margin: 0 auto;
   position: relative;
 
@@ -42,7 +43,7 @@
 
 .catalog__item::before {
   content: "";
-  background-color: red;
+  background-color: #ebebeb;
   height: 1px;
   width: 100vw;
   position: absolute;
@@ -65,6 +66,7 @@
   margin: 0;
   width: 76px;
   text-align: left;
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -99,7 +101,7 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
-  margin-top: 14px;
+  margin-top: 10px;
   width: 141px;
   border-collapse: collapse;
 
@@ -119,6 +121,7 @@
 
 .catalog__table td:nth-child(1n) {
   text-align: left;
+  // padding-bottom: 1px;
 }
 
 .catalog__table td:nth-child(2n) {
@@ -134,8 +137,8 @@
 }
 
 .catalog__button {
-  padding: 20px 109px 20px 109px;
   display: block;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 93px 10px 93px;
@@ -174,4 +177,11 @@
     margin-bottom: 87px;
     width: 167px;
   }
+}
+
+.catalog__img img {
+  // у меня не указан размер на элементах каталога,
+  // какой указывать, банку только или с областью вокруг него
+  width: 140px;
+  height: 112px;
 }
