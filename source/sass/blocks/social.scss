@@ -1,11 +1,3 @@
-.social__link__name img {
-  margin-bottom: 23px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
 .social__list {
   padding: 0;
   list-style: none;
@@ -23,21 +15,20 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
-    // не хотят стоять в 1  линию
   }
 }
 
-.social__link {
+.social__list li{
   display: flex;
   width: 40px;
   height: 40px;
   margin: 0 15px;
-  align-content: center;
-  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    height: auto;
+    // margin: 5px 10px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +42,7 @@
   width: 23px;
   height: 16px;
   margin-left: 20px;
+
 
   @media (min-width: $tablet-width) {
     width: 29px;

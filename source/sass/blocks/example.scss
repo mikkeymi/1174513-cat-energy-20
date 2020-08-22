@@ -42,12 +42,28 @@
   font-family: $base-font;
 }
 
+.example__title {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+}
+
 .example__subtitle {
   text-transform: uppercase;
 }
 
 .example__game--buttons {
   display: flex;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 67px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 81px;
+  }
 }
 
 .example__game-button {

@@ -46,11 +46,22 @@
   }
 }
 
-.page-footer__contact-info {
-  @include wrapper;
-  display: flex;
+.page-footer__link img {
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__contact-info {
+  width: 280px;
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+    margin: 0 auto;
     justify-content: space-between;
   }
 

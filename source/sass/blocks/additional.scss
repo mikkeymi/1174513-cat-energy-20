@@ -72,10 +72,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 632px;
+    height: 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
+    height: 40px;
   }
 }
 

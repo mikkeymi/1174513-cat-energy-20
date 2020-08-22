@@ -23,12 +23,14 @@
     margin-bottom: 30px;
     padding-left: 52px;
     padding-right: 0;
+    height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
+    height: 374px;
     // min-width: 570px;
   }
 }

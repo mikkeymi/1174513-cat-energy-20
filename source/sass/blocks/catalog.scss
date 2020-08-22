@@ -2,6 +2,13 @@
   @include wrapper;
 }
 
+.catalog__main-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
 .catalog__list {
   list-style: none;
   padding: 0;
@@ -21,6 +28,7 @@
 }
 
 .catalog__item {
+  position: relative;
   padding-top: 19px;
   padding-bottom: 25px;
   margin: 0 auto;
@@ -66,7 +74,6 @@
   margin: 0;
   width: 76px;
   text-align: left;
-  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -90,6 +97,13 @@
   margin: 0;
   font-size: 16px;
 
+  &::before {
+    content: url(../img/icon-plus-mobile.svg);
+    width: 30px;
+    height: 30px;
+    // размер?
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -101,7 +115,7 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 13px;
   width: 141px;
   border-collapse: collapse;
 
@@ -138,16 +152,25 @@
 
 .catalog__button {
   display: block;
-  margin-top: 20px;
+  margin-top: 11px;
+  height: 40px;
+  width: 280px;
+  padding: 10px 10px;
+  margin-bottom: -2px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 93px 10px 93px;
     margin-left: 39px;
     margin-right: 37px;
+    width: 248px;
+    height: 39px;
+    padding: 20px 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 53px 10px 53px;
+    width: 168px;
+    height: 40px;
+    padding: 18px 1px;
   }
 }
 

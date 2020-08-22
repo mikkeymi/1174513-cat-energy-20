@@ -5,24 +5,25 @@
   align-items: center;
   color: #444444;
   opacity: 0.3;
-
-  @media (min-width: $tablet-width) {
-    justify-content: center;
-    opacity: 1;
-    padding-top: 0;
-    // не могу наверх подтянуть никак
-  }
-}
-
-.copyright__logo-html p {
   font-family: $special-font;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 22px;
+    justify-content: space-between;
+
+    width: 163px;
+    opacity: 1;
+    padding-top: 0;
+    // padding-right: 22px;
+    // не могу наверх подтянуть никак
   }
 }
 

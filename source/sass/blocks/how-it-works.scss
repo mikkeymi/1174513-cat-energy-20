@@ -25,6 +25,10 @@
 .how-it-works__item {
   padding-top: 20px;
 
+  @media (min-width: $tablet-width) {
+    height: 280px;
+}
+
   &:last-child {
     margin-bottom: 42px;
   }

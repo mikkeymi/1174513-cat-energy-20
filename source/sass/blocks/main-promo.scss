@@ -23,7 +23,7 @@
   color: $white;
   line-height: 36px;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 27px;
   margin: 0;
   font-weight: normal;
 
@@ -33,6 +33,7 @@
     font-size: 60px;
     line-height: 60px;
     width: 450px;
+    padding-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,13 +47,14 @@
   text-transform: uppercase;
   color: $white;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    padding-top: 25px;
   }
 }
 
@@ -69,8 +71,15 @@
 
 .main-promo__button {
   display: block;
+  width: 280px;
+  height: 40px;
+  padding: 10px 15px 10px 15px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0px;
     width: 244px;
+    height: 54px;
+    padding: 26px 26px 14px 26px;
   }
 }
