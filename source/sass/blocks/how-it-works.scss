@@ -1,5 +1,9 @@
 .how-it-works {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
 }
 
 .how-it-works__list {
@@ -7,6 +11,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    // margin-top: 300px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -19,17 +24,63 @@
 
 .how-it-works__title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .how-it-works__item {
   padding-top: 20px;
+
+  &:nth-child(1)::before {
+    content: url(../img/how-work-icon1.png);
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      background-image: url(../img/how-work-icon1.png);
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+      margin-top: 40px;
+      //тут что то не то с масштабом, и не хочу делать фоном,
+      // как оставить контент но при этом изменить размер
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: url(../img/how-work-icon2.png);
+    position: absolute;
+  }
+
+  &:nth-child(3)::before {
+    content: url(../img/how-work-icon3.png);
+    position: absolute;
+  }
+
+  &:nth-child(4)::before {
+    content: url(../img/how-work-icon4.png);
+    position: absolute;
+  }
 
   @media (min-width: $tablet-width) {
     height: 280px;
 }
 
   &:last-child {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
+}
+
+.how-it-works__desk {
+  margin: 0;
+  margin-left: 80px;
+  margin-top: 6px;
 }

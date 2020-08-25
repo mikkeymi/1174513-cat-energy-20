@@ -6,7 +6,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  margin-top: 20px;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+  }
 }
 
 .catalog__list {
@@ -15,7 +19,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 91px;
+    margin-top: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
@@ -29,7 +33,7 @@
 
 .catalog__item {
   position: relative;
-  padding-top: 19px;
+  padding-top: 21px;
   padding-bottom: 25px;
   margin: 0 auto;
   position: relative;
@@ -99,9 +103,10 @@
 
   &::before {
     content: url(../img/icon-plus-mobile.svg);
+    display: block;
     width: 30px;
     height: 30px;
-    // размер?
+
   }
 
   @media (min-width: $tablet-width) {
@@ -115,7 +120,7 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
-  margin-top: 13px;
+  margin-top: 14px;
   width: 141px;
   border-collapse: collapse;
 
@@ -123,7 +128,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     margin: 0 auto;
-    margin-top: 21px;
+    margin-top: 13px;
     margin-bottom: 33px;
     width: 250px;
   }
@@ -133,9 +138,12 @@
   }
 }
 
+.catalog__table tr {
+  line-height: 14px;
+}
+
 .catalog__table td:nth-child(1n) {
   text-align: left;
-  // padding-bottom: 1px;
 }
 
 .catalog__table td:nth-child(2n) {
@@ -152,18 +160,26 @@
 
 .catalog__button {
   display: block;
-  margin-top: 11px;
   height: 40px;
   width: 280px;
-  padding: 10px 10px;
+  padding: 11px 10px;
+  margin-top: -1px;
   margin-bottom: -2px;
+  font-size: 17px;
+  line-height: 0;
+  font-family: Oswald;
+  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
+    // font-size: 16px;
     margin-left: 39px;
     margin-right: 37px;
     width: 248px;
     height: 39px;
     padding: 20px 30px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -203,8 +219,9 @@
 }
 
 .catalog__img img {
-  // у меня не указан размер на элементах каталога,
-  // какой указывать, банку только или с областью вокруг него
-  width: 140px;
-  height: 112px;
+   margin-top: -20px;
+
+   @media (min-width: $tablet-width) {
+      margin-top: -69px;
+   }
 }

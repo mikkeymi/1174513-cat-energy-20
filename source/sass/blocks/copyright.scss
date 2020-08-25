@@ -9,21 +9,16 @@
   font-style: normal;
   font-weight: normal;
   font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-size: 16px;
-  line-height: 18px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-
+    margin-top: -18px;
     width: 163px;
     opacity: 1;
-    padding-top: 0;
-    // padding-right: 22px;
-    // не могу наверх подтянуть никак
+    padding-top: -20px;
   }
 }
 
