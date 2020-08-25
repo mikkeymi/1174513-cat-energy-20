@@ -29,6 +29,7 @@
       border-top: none;
     }
   }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -58,12 +59,12 @@
 
 .site-list__link--desktop {
   @media (min-width: $desktop-width) {
-  color: $white;
+    color: $white;
   }
 }
 
 .site-list__item--active2 {
-@media (min-width: $desktop-width) {
-  border-bottom: 2px solid $white;
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
   }
 }

@@ -20,7 +20,7 @@
   }
 }
 
-.social__list li{
+.social__list li {
   margin: 0 7px;
   // justify-content: center;
   // margin-top: 14px;
@@ -42,6 +42,7 @@
   height: 40px;
   align-items: center;
   justify-content: center;
+
   @media (min-width: $tablet-width) {
     margin-top: -13px;
     // margin-left: 10px;

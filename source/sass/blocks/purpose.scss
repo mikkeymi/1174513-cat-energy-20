@@ -8,7 +8,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0px;
+    // padding-top: 0;
     margin: 0;
   }
 
@@ -64,7 +64,7 @@
 }
 
 .purpose__title--slim::before {
-  content: url(../img/icon-cat-slim.svg);
+  content: url("../img/icon-cat-slim.svg");
   display: inline-block;
   width: 36px;
   height: 50px;
@@ -91,7 +91,7 @@
   position: absolute;
   width: 65px;
   height: 65px;
-  background: radial-gradient(circle, #68B738 54%, #f2f2f2 56%);
+  background: radial-gradient(circle, #68b738 54%, #f2f2f2 56%);
   top: 19px;
   left: 15px;
   z-index: 2;
@@ -112,7 +112,7 @@
 }
 
 .purpose__title--pro::before {
-  content: url(../img/icon-cat-pro.svg);
+  content: url("../img/icon-cat-pro.svg");
   display: inline-block;
   width: 68px;
   height: 28px;
@@ -139,7 +139,7 @@
   position: absolute;
   width: 65px;
   height: 65px;
-  background: radial-gradient(circle, #68B738 54%, #f2f2f2 56%);
+  background: radial-gradient(circle, #68b738 54%, #f2f2f2 56%);
   top: 19px;
   left: 15px;
   z-index: 2;
@@ -169,29 +169,27 @@
   @media (min-width: $tablet-width) {
     margin-top: 24px;
     margin-bottom: 0;
-    padding-bottom: 0;
     border: none;
     width: 384px;
     padding-bottom: 48px;
-    }
-    @media (min-width: $desktop-width) {
-      margin-top: 73px;
-      width: 467px;
-      padding-bottom: 24px;
-    }
   }
 
-  .purpose__title--pro > .purpose__desk {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+    width: 467px;
+    padding-bottom: 24px;
+  }
+}
+
+.purpose__title--pro > .purpose__desk {
+  @media (min-width: $tablet-width) {
     width: 340px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 450px;
-    }
   }
 
-
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
+}
 
 .purpose__link {
   text-decoration: none;
@@ -207,13 +205,11 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 57px;
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 
 .purpose__link::after {
-  content: url(../img/icon-right-arrow-long.svg);
+  content: url("../img/icon-right-arrow-long.svg");
   // цвет можно поменять у псевдоэлемента?
   display: inline-block;
   width: 25px;
