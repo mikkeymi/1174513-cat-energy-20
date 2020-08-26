@@ -65,6 +65,7 @@
 
 .site-list__item--active2 {
   @media (min-width: $desktop-width) {
+    padding-bottom: 1px;
     border-bottom: 2px solid $white;
   }
 }
