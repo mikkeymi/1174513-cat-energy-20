@@ -12,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     .main-promo {
-     z-index: 0;
-     padding-bottom: 185px;
+      z-index: 0;
+      padding-bottom: 185px;
 
     &::before {
       content: "";
