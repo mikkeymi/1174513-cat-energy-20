@@ -18,7 +18,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
-    // width: 455px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +27,26 @@
     width: auto;
   }
 }
+
+// .main-nav__item--active {
+//   @media (min-width: $tablet-width) {
+//     border-bottom: 2px solid $accent-green;
+//     padding-bottom: 8px;
+//   }
+// }
+
+// .main-nav__link--desktop {
+//   @media (min-width: $desktop-width) {
+//     color: $white;
+//   }
+// }
+
+// .main-nav__item--active2 {
+//   @media (min-width: $desktop-width) {
+//     padding-bottom: 1px;
+//     border-bottom: 2px solid $white;
+//   }
+// }
 
 .main-nav--closed .page-header__button::before {
   content: "";

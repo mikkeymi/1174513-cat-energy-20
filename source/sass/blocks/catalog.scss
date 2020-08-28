@@ -23,6 +23,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
+    grid-row-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +35,7 @@
 .catalog__item {
   position: relative;
   padding-top: 21px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -117,7 +118,7 @@
   line-height: 16px;
   font-family: $base-font;
   font-weight: 400;
-  margin-top: 14px;
+  margin-top: 13px;
   width: 141px;
   border-collapse: collapse;
 
@@ -160,11 +161,10 @@
   height: 40px;
   width: 280px;
   padding: 11px 10px;
-  margin-top: -1px;
-  margin-bottom: -2px;
+  margin-bottom: 0;
   font-size: 17px;
   line-height: 0;
-  letter-spacing: 1px;
+  margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     // font-size: 16px;
@@ -214,9 +214,19 @@
 }
 
 .catalog__img img {
+  padding: 0;
+  margin: 0;
+  // откуда берется это и  картинка сплющивается
+  //  если указывать размер макета
   margin-top: -20px;
 
   @media (min-width: $tablet-width) {
     margin-top: -69px;
+  }
+}
+
+.catalog__img img:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
   }
 }

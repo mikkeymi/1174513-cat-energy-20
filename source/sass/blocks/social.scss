@@ -18,6 +18,10 @@
     // margin-left: 10px;
     margin-right: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .social__list li {
