@@ -11,19 +11,44 @@
 .additional__list {
   list-style: none;
   padding: 0;
+  margin-top: 32px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 78px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .additional__item {
   padding-top: 13px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 38px;
+    padding-left: 38px;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 26px;
+    padding-top: 23px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-left: 40px;
   }
 }
 
@@ -35,6 +60,49 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  margin-top: 30px;
+  padding-right: 26px;
+
+
+  &::before {
+    content: "";
+    z-index: -3;
+    position: absolute;
+    height: 2px;
+    background-color: #68b736;
+    width: 100vw;
+    position: absolute;
+    left: 99%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    background-color: white;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-top: 8px;
+
+    &::before {
+      content: "";
+      z-index: -3;
+      position: absolute;
+      height: 2px;
+      background-color: #68b736;
+      width: 100vw;
+      position: absolute;
+      left: 80%;
+      transform: translateX(-50%);
+      top: 21px;
+    }
+  }
 }
 
 .additional__product-name {
@@ -53,6 +121,10 @@
 .additional__row {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    // width: 223px;
+   }
 }
 
 .additional__info {
@@ -62,66 +134,38 @@
   color: $dark-gray-text;
   margin: 0;
   padding: 0;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional__info:nth-child(2){
+  margin-left: 50px;
 }
 
 .additional__button {
   font-family: $special-font;
-  padding: 7px 65px 7px 64px;
+  font-size: 16px;
+  height: 40px;
   width: 100%;
+
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 632px;
     height: 38px;
+    margin-top: 26px;
+    // margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
-  }
-}
-
-.gift-to-order__desc {
-  font-family: $base-font;
-  color: $white;
-  font-size: 16px;
-  line-height: 20px;
-  width: 161px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 161px;
-    margin-top: 63px;
-    text-align: left;
-  }
-}
-
-.gift-to-order {
-  min-height: 289px;
-  width: 280px;
-  background-color: $accent-green;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-left: 55px;
-  padding-right: 55px;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    min-height: 200px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 119px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    width: 245px;
-    height: 289px;
-    padding-left: 36px;
-    padding-right: 42px;
-    text-align: center;
-    margin-left: 79px;
   }
 }
