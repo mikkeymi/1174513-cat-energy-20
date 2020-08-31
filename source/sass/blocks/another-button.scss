@@ -9,6 +9,11 @@
   background-color: $basic-grey;
   padding: 20px 20px 20px 20px;
   margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    // width: 280px;
+    // margin: 0 auto;
+  }
 }
 
 .button:hover {
