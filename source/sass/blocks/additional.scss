@@ -2,7 +2,7 @@
   @include wrapper;
 }
 
-.additional__flex {
+.additional__grid {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -23,14 +23,14 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    // border-top: 1px solid #cdcdcd;
-    // border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
 .additional__item {
   padding-top: 13px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 28px;
@@ -39,16 +39,15 @@
     align-items: center;
     padding-right: 38px;
     padding-left: 38px;
-    display: flex;
     flex-wrap: wrap;
     padding-top: 23px;
-    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 5px;
-    padding-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 18px;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -65,7 +64,7 @@
   display: inline-block;
   background-color: white;
   margin-top: 30px;
-  padding-right: 26px;
+  padding-right: 20px;
 
 
   &::before {
@@ -75,9 +74,6 @@
     height: 2px;
     background-color: #68b736;
     width: 100vw;
-    position: absolute;
-    left: 99%;
-    transform: translateX(-50%);
     top: 15px;
   }
 
@@ -91,13 +87,6 @@
     margin-top: 8px;
 
     &::before {
-      content: "";
-      z-index: -3;
-      position: absolute;
-      height: 2px;
-      background-color: #68b736;
-      width: 100vw;
-      position: absolute;
       left: 80%;
       transform: translateX(-50%);
       top: 19px;
@@ -107,7 +96,7 @@
       margin-top: 20px;
       padding-left: 0;
 
-      &::before{
+      &::before {
         top: 24px;
       }
     }
@@ -131,18 +120,11 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
-    // width: 223px;
-   }
-
-   @media (min-width: $desktop-width) {
-    //  display: block;
-    // margin-left: 100px;
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
     justify-content: space-between;
-    //  width: 300px;
-    //  text-align: center;
-    // text-align: center;
-   }
+    margin-left: auto;
+  }
 }
 
 .additional__info {
@@ -167,7 +149,7 @@
   }
 }
 
-.additional__info:nth-child(2){
+.additional__info:nth-child(2) {
   margin-left: 50px;
 }
 
@@ -187,8 +169,9 @@
   }
 
   @media (min-width: $desktop-width) {
+  //  margin-top: 3px;
+  margin-top: 0;
     width: 244px;
     height: 40px;
-    // margin-top: 13px;
   }
 }
