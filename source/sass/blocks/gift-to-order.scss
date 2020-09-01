@@ -7,7 +7,7 @@
   text-align: center;
 
   &::before {
-    content: url(../img/icon-gift.svg);
+    content: url("../img/icon-gift.svg");
     width: 60px;
     height: 80px;
     display: block;
