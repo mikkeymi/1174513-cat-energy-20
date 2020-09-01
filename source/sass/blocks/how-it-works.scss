@@ -1,5 +1,9 @@
 .how-it-works {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
 }
 
 .how-it-works__list {
@@ -7,12 +11,122 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin-top: 53px;
+    margin-bottom: 102px;
+    grid-row-gap: 114px;
+    grid-column-gap: 60px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: flex;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 52px;
+    grid-column-gap: 75px;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+}
+
+.how-it-works__title {
+  margin: 0;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
+}
+
+.how-it-works__item {
+  padding-top: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-top: -4px;
+    }
+  }
+}
+
+.how-it-works__desk::before {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.how-it-works__desk--benefit::before {
+  content: url("../img/advantage-leaf@1x.png");
+  top: 2px;
+  left: -76px;
+
+  @media (min-width: $tablet-width) {
+    top: -100px;
+    left: 18px;
+  }
+}
+
+.how-it-works__desk--powder::before {
+  content: url("../img/advantage-powder@1x.png");
+  top: 2px;
+  left: -74px;
+
+  @media (min-width: $tablet-width) {
+    top: -99px;
+    left: 16px;
+  }
+}
+
+.how-it-works__desk--food::before {
+  content: url("../img/advantage-dining@1x.png");
+  top: 0;
+  left: -76px;
+
+  @media (min-width: $tablet-width) {
+    top: -99px;
+    left: 16px;
+  }
+}
+
+.how-it-works__desk--wait::before {
+  content: url("../img/advantage-clock@1x.png");
+  top: 0;
+  left: -76px;
+
+  @media (min-width: $tablet-width) {
+    top: -99px;
+    left: 16px;
+  }
+}
+
+.how-it-works__desk {
+  margin: 0;
+  margin-left: 80px;
+  margin-top: 5px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 110px;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-top: 30;
   }
 }

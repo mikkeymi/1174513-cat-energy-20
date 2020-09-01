@@ -1,17 +1,32 @@
-.copyright__logo {
-  text-decoration: none;
-}
-
-.page-footer__copyright p {
-  display: inline-block;
-}
-
-.page-footer__copyright {
+.copyright__logo-html {
+  padding-top: 10px;
   display: flex;
-}
-
-.copyright__text {
-  color: $dark-gray-text;
+  justify-content: space-between;
+  align-items: center;
+  color: #444444;
+  opacity: 0.3;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    margin-top: -18px;
+    width: 163px;
+    opacity: 1;
+  }
+}
+
+.copyright__logo-html svg path {
+  fill: #444444;
+  opacity: 0.3;
+  width: 27px;
+  height: 34px;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  }
 }

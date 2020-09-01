@@ -1,0 +1,62 @@
+.gift-to-order__desc {
+  font-family: $base-font;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
+  text-align: center;
+
+  &::before {
+    content: url("../img/icon-gift.svg");
+    width: 60px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    margin-top: 63px;
+    text-align: left;
+  }
+}
+
+.gift-to-order {
+  position: relative;
+  min-height: 289px;
+  width: 280px;
+  background-color: $accent-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    margin-bottom: 75px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 245px;
+    height: 289px;
+    // padding-left: 36px;
+    // padding-right: 42px;
+    text-align: center;
+    margin-left: 79px;
+  }
+}

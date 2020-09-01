@@ -1,5 +1,15 @@
 .example {
   background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    // padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .example__wrapper {
@@ -13,10 +23,13 @@
 .example__block {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: 50%;
   }
 }
 
@@ -24,30 +37,146 @@
   @media (min-width: $mobile-width-only) {
     display: flex;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+  }
+}
+
+.example__block-flex p {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__value {
+  position: relative;
   text-align: center;
   font-size: 24px;
-  line-height: 24px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif, $base-font;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 15px;
+  flex-grow: 1;
+  width: 124px;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-grow: 0;
+    }
+  }
 }
 
 .example__value span {
   color: $dark-gray-text;
   text-transform: lowercase;
-  line-height: 12px;
+  line-height: 13px;
   font-size: 12px;
   font-family: $base-font;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eaeaea;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
+}
+
+.example__title {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 76px;
+  }
+}
+
+.example__desc {
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+    width: 51%;
+  }
 }
 
 .example__subtitle {
   text-transform: uppercase;
+  margin-top: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    right: 0;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    display: flex;
+    width: 326px;
+    justify-content: space-between;
+  }
 }
 
 .example__game--buttons {
   display: flex;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .example__game-button {
@@ -61,5 +190,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.example__img {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
   }
 }

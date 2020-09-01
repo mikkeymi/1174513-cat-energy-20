@@ -8,23 +8,27 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-      <div class="page-header__box">
-        <a class="page-header__logo" href="#">
-          <img src="img/logo-mobile.svg" width="170" height="34" alt="Лого Кэт Энерджи">
+      <div class="page-header__box main-nav--closed">
+        <!-- main-nav--closed main-nav--opened -->
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset=img/logo-desktop.svg>
+            <img src="img/logo-mobile.svg" width="190" height="38"
+            alt="Лого Кэт Энерджи">
+          </picture>
         </a>
-
-        <button class="main-nav__button" type="button"><span class="visually-hidden">открыть меню</span></button>
+        <button class="page-header__button" type="button"><span class="visually-hidden">открыть меню</span></button>
       </div>
-      <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Главная</a>
+      <nav class="main-nav main-nav--index">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
       </nav>
@@ -34,39 +38,39 @@
   <div class="main-promo__box">
   <h1 class="main-promo__title">Функциональное питание для котов</h1>
   <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
-  <img src="img/index-can-mobile1.jpg" width="280" height="270" alt="Фото банки корма">
+  <img class="main-promo__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото банки корма">
   <a class="main-promo__button button" href="#">Подобрать программу</a>
   </div>
 </section>
 <section class="purpose">
   <h2 class="visually-hidden">Разделы каталога</h2>
   <ul class="purpose__list">
-    <li class="purpose__item">
-      <h3 class="purpose__title">Похудение</h3>
+    <li class="purpose__item purpose__item--slim">
+      <h3 class="purpose__title ">Похудение</h3>
       <p class="purpose__desk desk-group">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
       <a class="purpose__link" href="catalog.html">Каталог slim</a>
     </li>
-    <li class="purpose__item">
+    <li class="purpose__item purpose__item--pro">
       <h3 class="purpose__title">Набор массы</h3>
-      <p class="purpose__desk desk-group">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <p class="purpose__desk desk-group">Заработать авторитет среди дворовых котов и&nbspдаже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
       <a class="purpose__link" href="catalog.html">Каталог pro</a>
     </li>
   </ul>
 </section>
 <section class="how-it-works">
-  <h2 class="how-it-works__title title-group">Как это работает?</h2>
+  <h2 class="how-it-works__title title-group">Как это работает</h2>
   <ul class="how-it-works__list">
   <li class="how-it-works__item">
-  <p class="how-it-works__desk desk-group"> Функциональное питание содержит только полезные питательные вещества.</p>
+    <p class="how-it-works__desk desk-group how-it-works__desk--benefit"> Функциональное питание содержит только полезные питательные вещества.</p>
   </li>
   <li class="how-it-works__item">
-    <p class="how-it-works__desk desk-group">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+    <p class="how-it-works__desk desk-group how-it-works__desk--powder">Выпускается в виде&nbspпорошка, который нужно лишь залить кипятком и готово.</p>
   </li>
   <li class="how-it-works__item">
-    <p class="how-it-works__desk desk-group">Замените один-два приема обычной еды на наше функциональное питание.</p>
+    <p class="how-it-works__desk desk-group how-it-works__desk--food">Замените один-два приема обычной еды на наше функциональное питание.</p>
   </li>
   <li class="how-it-works__item">
-    <p class="how-it-works__desk desk-group">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+    <p class="how-it-works__desk desk-group how-it-works__desk--wait">Уже через месяц наслаждайтесь изменениями&nbspк&nbspлучшему вашего&nbspпитомца!</p>
   </li>
   </ul>
 </section>
@@ -74,13 +78,13 @@
     <div class="example__wrapper">
     <div class="koshak-test">
       <h2 class="example__title title-group">Живой пример</h2>
-      <p class="example__desc desk-group">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      <p class="example__desc desk-group">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbspSlim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="example__block">
         <div class="example__block-flex">
-        <p class="example__value">5 кг<br><span>снижение<br>веса</span>
+        <p class="example__value">5 кг<br><span>снижение веса</span>
         </p>
-        <p class="example__value">60 дней<br><span>затрачено<br>времени</span></p>
+        <p class="example__value">60 дней<br><span>затрачено времени</span></p>
       </div>
       <div class="example__block-2">
       <p class="example__subtitle">Затраты на питание: <span>15 000 руб.</span></p>
@@ -88,7 +92,7 @@
       </div>
     </div>
     <div class="example__game">
-      <img class="example__img" src="img/before-mobile@1x.png" alt="Фото кота">
+      <img class="example__img" src="img/before-mobile@1x.png" width="311" height="262" alt="Фото кота">
       <div class="example__game--buttons">
         <button class="example__game-button" type="button">Было</button>
         <button class="example__game-button" type="button">Стало</button>
@@ -100,20 +104,19 @@
 <footer class="page-footer">
   <div class="page-footer__contact-info">
     <p class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="page-footer__address">Ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+    <p class="page-footer__address">yл. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
   </div>
   <div class="page-footer__map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6424676484557!2d30.32091451595357!3d59.93807468187594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fbc3bd3bd%3A0xb77609533f1f9038!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDIyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sge!4v1594817092777!5m2!1sru!2sge" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 <div class="page-footer__box">
 <div class="page-footer__wrapper">
-  <a class="social__link__name" href="#">
+  <a class="page-footer__link" href="#">
   <img src="img/logo-name.png" width="128" height="24" alt="Кэт Энерджи">
 </a>
-</div>
   <h3 class="visually-hidden">Мы в социальных сетях</h3>
 
-  <ul class="page-footer social__list">
+  <ul class="social__list">
   <li>
     <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
   </li>
@@ -124,11 +127,11 @@
     <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a>
   </li>
   </ul>
-
 <div class="page-footer__copyright copyright">
-  <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-
-  <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+  <a class="copyright__logo-html" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+    <svg width="27" height="34" viewBox="0 0 27 34">
+      <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#2E368F"/>
+    </svg>
   </a>
 </div>
 </div>
