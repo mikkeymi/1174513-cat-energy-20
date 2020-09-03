@@ -50,7 +50,7 @@
             <input class="cat-info__input info__style" type="number" min="0" required value="7" name="cat_weigth">
           </label>
           <label class="cat-info__label info__style">
-            Возраст (лет):
+            Возраст&nbsp(лет):
             <input class="cat-info__input info__style" type="number" min="0" required value="7"  name="cat_age">
           </label>
         </fieldset>
@@ -58,16 +58,16 @@
         <fieldset class="checkbox-cat">
           <legend class="visually-hidden">Мотивация кота</legend>
             <ul class="checkbox-cat__target">
-              <li class="checkbox-cat__list">
-                <input class="checkbox-cat__input" checked id="cat_thinner" name="type" value="hotel" type="radio">
+              <li class="checkbox-cat__item">
+                <input class="checkbox-cat__input visually-hidden" checked id="cat_thinner" name="type" value="hotel" type="radio">
                 <label class="checkbox-cat__label" for="cat_thinner">Похудение</label>
               </li>
-              <li>
-                <input lass="checkbox-cat__input" id="cat_fatter" name="type" value="hotel" type="radio">
+              <li class="checkbox-cat__item">
+                <input class="checkbox-cat__input visually-hidden" id="cat_fatter" name="type" value="hotel" type="radio">
                 <label class="checkbox-cat__label" for="cat_fatter">Набор массы</label>
               </li>
-              <li>
-                <input class="checkbox-cat__input" id="cat_help" name="type" value="hotel" type="radio">
+              <li class="checkbox-cat__item">
+                <input class="checkbox-cat__input visually-hidden" id="cat_help" name="type" value="hotel" type="radio">
                 <label class="checkbox-cat__label" for="cat_help">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -80,9 +80,21 @@
           <div class="owner__box">
             <label class="owner__label info__style" >E-mail:*
               <input class="owner__input info__style" type="email" required="" value="kuklachev@gmail.com" name="owner-email">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                  <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                </svg>
+
             </label>
             <label class="owner__label info__style">Телефон:*
               <input class="owner__input info__style" type="text"  required="" value="8 (960) 900-60-90" name="ownen-tel">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+  <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+  <path
+    d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+  C7.8,20,8.1,19.7,8.1,19.4z"/>
+</svg>
             </label>
           </div>
         </fieldset>
@@ -95,19 +107,19 @@
           <legend class="additionally__subtitle form__sub">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <input class="additionally__input" checked id="sugarfree" name="additionally" value="sugarfree" type="checkbox">
+                <input class="additionally__input visually-hidden" checked id="sugarfree" name="additionally" value="sugarfree" type="checkbox">
                 <label class="additionally__label" for="sugarfree">Сахарозаменитель</label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input" id="water" name="additionally" value="water" type="checkbox">
+                <input class="additionally__input visually-hidden" id="water" name="additionally" value="water" type="checkbox">
                 <label class="additionally__label" for="water">Питьевая вода</label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input" id="milk" name="additionally" value="milk" type="checkbox">
+                <input class="additionally__input visually-hidden" id="milk" name="additionally" value="milk" type="checkbox">
                 <label class="additionally__label" for="milk">Молоко</label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__input" id="vitamins" name="additionally" value="vitamins" type="checkbox">
+                <input class="additionally__input visually-hidden" id="vitamins" name="additionally" value="vitamins" type="checkbox">
                 <label class="additionally__label" for="vitamins">Витамины</label>
               </li>
             </ul>
