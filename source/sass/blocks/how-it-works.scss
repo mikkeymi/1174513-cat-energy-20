@@ -46,6 +46,12 @@
 .how-it-works__item {
   padding-top: 21px;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 122px 20px;
+  }
+
   &::before {
     content: "";
     position: absolute;

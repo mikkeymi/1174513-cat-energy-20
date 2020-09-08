@@ -17,13 +17,16 @@
 }
 
 .owner__subtitle {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   margin-bottom: 33px;
   margin-top: 10px;
   background-color: $white;
   z-index: 1;
+  max-width: 223px;
+  padding-left: 20px;
+  margin-left: -20px;
 
   &::before {
     content: "";
@@ -33,14 +36,15 @@
     background-color: #68b736;
     width: 100vw;
     top: -68px;
-    // как палку подвинуть
+    transform: translateX(-50%);
+    left: 50%;
   }
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
     margin-bottom: 78px;
     padding-right: 40px;
-    // палка с другой стороны тоже нужна
+    max-width: none;
 
     &::before {
       top: -91px;
@@ -82,18 +86,13 @@
     border-color: #444444;
   }
 
-  &::invalid {
+  &:invalid {
     border-color: #ff8282;
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
     padding: 8px 19px;
-
-    // &:last-child {
-    //   padding: 8px 11px;
-    // } у них разые паддинги,
-    // новый класс задать второму инпуту?
   }
 }
 

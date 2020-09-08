@@ -8,8 +8,7 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-      <div class="page-header__box main-nav--closed">
-        <!-- main-nav--closed main-nav--opened -->
+      <div class="page-header__box">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 768px)" srcset=img/logo-desktop.svg>
@@ -94,16 +93,26 @@
     <div class="example__game">
       <img class="example__img" src="img/before-mobile@1x.png" width="311" height="262" alt="Фото кота">
       <div class="example__game--buttons">
-        <button class="example__game-button" type="button">Было</button>
-        <button class="example__game-button" type="button">Стало</button>
+        <div class="slidecontainer">
+          <div class="slidecontainer__filter">
+            <button class="slidecontainer__button" type="button">Было</button>
+            <div class="slidecontainer__range-controls">
+            <div class="slidecontainer__scale">
+              <div class="slidecontainer__bar"></div>
+              </div>
+              <div class="slidecontainer__toggle" tabindex="0"></div>
+              </div>
+              <button class="slidecontainer__button" type="button">Стало</button>
+        </div>
       </div>
     </div>
     </div>
   </section>
 </main>
+
 <footer class="page-footer">
   <div class="page-footer__contact-info">
-    <p class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
+    <p class="page-footer__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
     <p class="page-footer__address">yл. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
   </div>
   <div class="page-footer__map">
@@ -137,5 +146,6 @@
 </div>
 </div>
   </footer>
+  <script src="js/script.js"></script>
   </body>
   </html>

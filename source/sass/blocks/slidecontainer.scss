@@ -1,0 +1,96 @@
+.slidecontainer__button {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif, $base-font;
+  font-size: 16px;
+  align-items: center;
+  outline: none;
+  border: none;
+  background: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #dcdcdc;
+  }
+}
+
+.slidecontainer__filter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.slidecontainer__range-controls {
+  width: 86px;
+  margin: 0 8px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 6px;
+    width: 428px;
+    margin: 0 23px;
+  }
+}
+
+.slidecontainer__range-controls .slidecontainer__scale {
+  height: 16px;
+  border: 2px solid #cdcdcc;
+  border-radius: 30%;
+  background: $white;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    border-radius: 0;
+    background: #dcdcdc;
+  }
+}
+
+.slidecontainer__range-controls .slidecontainer__bar {
+  // width: 50%;
+  // background-color: $accent-green;
+  // вроде вместо зеленой палки можно тут что
+  // то написать но я не смогла
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 6px;
+    background: #dcdcdc;
+  }
+}
+
+.slidecontainer__range-controls .slidecontainer__toggle {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background-color: $accent-green;
+  transform: rotate(90deg);
+  border-radius: 30%;
+  top: -12px;
+  right: 100px;
+  z-index: 10;
+  left: 123px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -12px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 13px solid $white;
+    background-color: $accent-green;
+    // border-radius: 50%;
+    cursor: pointer;
+    left: 50%;
+  }
+}

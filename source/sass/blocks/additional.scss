@@ -1,5 +1,6 @@
 .additional {
   @include wrapper;
+  // position: relative;
 }
 
 .additional__grid {
@@ -60,11 +61,12 @@
   line-height: 24px;
   font-weight: normal;
   margin: 0;
-  position: relative;
   display: inline-block;
   background-color: white;
   margin-top: 30px;
   padding-right: 20px;
+  padding-left: 20px;
+  margin-left: -20px;
 
   &::before {
     content: "";
@@ -72,8 +74,9 @@
     position: absolute;
     height: 2px;
     background-color: #68b736;
-    width: 100vw;
-    top: 15px;
+    left: 0;
+    right: 0;
+    margin-top: 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -86,9 +89,9 @@
     margin-top: 8px;
 
     &::before {
-      left: 80%;
+      left: 50%;
       transform: translateX(-50%);
-      top: 19px;
+      top: 27px;
     }
 
     @media (min-width: $desktop-width) {
@@ -96,7 +99,7 @@
       padding-left: 0;
 
       &::before {
-        top: 24px;
+        top: 29px;
       }
     }
   }

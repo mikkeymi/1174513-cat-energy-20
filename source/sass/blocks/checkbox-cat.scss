@@ -59,7 +59,11 @@
   }
 }
 
-.checkbox-cat__input + label::before {
+.checkbox-cat__label:active {
+  opacity: 0.3;
+}
+
+.checkbox-cat__label::before {
   content: "";
   position: absolute;
   left: -44px;
@@ -75,8 +79,6 @@
     left: -63px;
   }
 }
-
-// тут для hover как сделать? обернуь инпут в label?
 
 .checkbox-cat__input:checked + label::after {
   content: "";

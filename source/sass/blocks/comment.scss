@@ -1,5 +1,4 @@
 .comment {
-  position: relative;
   margin-top: 13px;
 
   @media (min-width: $tablet-width) {
@@ -14,6 +13,8 @@
 .comment__subtitle {
   padding-right: 22px;
   background-color: $white;
+  padding-left: 20px;
+  margin-left: -20px;
 
   &::before {
     content: "";
@@ -21,15 +22,16 @@
     position: absolute;
     height: 2px;
     background-color: #68b736;
-    width: 100vw;
-    top: 15px;
+    left: 0;
+    right: 0;
+    margin-top: 15px;
   }
 
   @media (min-width: $tablet-width) {
     padding-right: 39px;
 
     &::before {
-      top: 23px;
+      margin-top: 20px;
     }
   }
 }
@@ -50,6 +52,14 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+}
+
+.comment__textarea:active {
+  border: 2px solid #444444;
+}
+
+.comment__textarea:invalid {
+  border: 2px solid #ff8282;
 }
 
 .comment [placeholder] {

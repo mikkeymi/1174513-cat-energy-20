@@ -62,11 +62,61 @@
 .page-header__button {
   position: relative;
   background-color: transparent;
+  display: none;
   border: none;
   width: 40px;
   height: 40px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.page-header__button--close {
+  display: block;
+}
+
+.page-header__button--close::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 24px;
+  height: 1px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__button--close:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade($black, 30%),
+    0 16px 0 0 fade($black, 30%);
+}
+
+.page-header__button--open {
+  display: block;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 22px;
+    height: 1px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
