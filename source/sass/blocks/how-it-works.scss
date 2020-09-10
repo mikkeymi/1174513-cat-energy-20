@@ -9,6 +9,8 @@
 .how-it-works__list {
   list-style: none;
   padding: 0;
+  counter-reset: section;
+
 
   @media (min-width: $tablet-width) {
     margin-top: 53px;
@@ -44,13 +46,8 @@
 }
 
 .how-it-works__item {
+  position: relative;
   padding-top: 21px;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/1.png");
-    background-repeat: no-repeat;
-    background-position: 122px 20px;
-  }
 
   &::before {
     content: "";
@@ -66,6 +63,22 @@
 
     @media (min-width: $tablet-width) {
       margin-top: -4px;
+    }
+  }
+}
+
+.how-it-works__item {
+  @media (min-width: $tablet-width) {
+
+  &::after {
+    counter-increment: section;
+    content: counter(section);
+    font-size: 280px;
+    color: #f2f2f2;
+    position: absolute;
+    left: 36%;
+    top: 110px;
+    z-index: 3;
     }
   }
 }
@@ -125,6 +138,7 @@
   margin-left: 80px;
   margin-top: 5px;
   position: relative;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;

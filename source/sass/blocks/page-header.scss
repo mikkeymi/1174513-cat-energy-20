@@ -91,13 +91,6 @@
   }
 }
 
-.page-header__button--close:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade($black, 30%),
-    0 16px 0 0 fade($black, 30%);
-}
-
 .page-header__button--open {
   display: block;
 

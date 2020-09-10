@@ -76,7 +76,7 @@
     background-color: #68b736;
     left: 0;
     right: 0;
-    margin-top: 17px;
+    margin-top: 15px;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,18 +89,11 @@
     margin-top: 8px;
 
     &::before {
-      left: 50%;
-      transform: translateX(-50%);
-      top: 27px;
+      margin-top: 20px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 10px;
-      padding-left: 0;
-
-      &::before {
-        top: 29px;
-      }
     }
   }
 }

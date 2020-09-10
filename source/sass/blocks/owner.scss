@@ -1,7 +1,7 @@
 .owner {
   margin: 0;
   padding: 0;
-  position: relative;
+  // position: relative;
 }
 
 .owner__box {
@@ -34,10 +34,9 @@
     position: absolute;
     height: 2px;
     background-color: #68b736;
-    width: 100vw;
-    top: -68px;
-    transform: translateX(-50%);
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin-top: 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -45,10 +44,6 @@
     margin-bottom: 78px;
     padding-right: 40px;
     max-width: none;
-
-    &::before {
-      top: -91px;
-    }
   }
 
   @media (min-width: $desktop-width) {

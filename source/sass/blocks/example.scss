@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     background: #ffffff;
     border-top: 1px solid #e6e6e6;
-    // padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,6 +166,14 @@
   }
 }
 
+.example__game {
+  @media (min-width: $tablet-width) {
+  background: #eaeaea;
+  min-height: 620px;
+  position: relative;
+  }
+}
+
 .example__game--buttons {
   padding-bottom: 28px;
   margin-top: 62px;
@@ -190,10 +197,30 @@
     width: 708px;
     height: 500px;
     margin-top: 0;
+    display: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 690px;
     height: 656px;
   }
+}
+
+.example__img--game {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    height: 520px;
+    position: absolute;
+    top: 60px;
+    left: 3%;
+    z-index: 3;
+  }
+}
+.kot {
+  position: absolute;
+  left: 8%;
+  z-index: 4;
+  // background-color: red;
 }
