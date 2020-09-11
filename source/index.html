@@ -18,16 +18,16 @@
         </a>
         <button class="page-header__button" type="button"><span class="visually-hidden">открыть меню</span></button>
       </div>
-      <nav class="main-nav main-nav--index">
+      <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav--index main-nav__link--active" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav--index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
       </nav>
@@ -90,11 +90,28 @@
       </div>
       </div>
     </div>
-    <div class="example__game">
-      <img class="example__img" src="img/before-mobile@1x.png" width="311" height="262" alt="Фото кота">
-      <img class="example__img--game" src="img/before-desktop@1x.png" width="650" height="654" alt="Фото кота">
-      <img class="example__img--game kot" src="img/after-tablet@1x.png" width="607" height="654" alt="Фото кота">
-      <div class="example__game--buttons">
+
+    <div class="example__game game">
+      <div class="game__img game__img--before">
+        <!-- <img src="img/before-desktop@1x.png" width="690" height="517" alt="Фота кота"> -->
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+          <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
+        </picture>
+    </div>
+    <div class="game__img game__img--after">
+        <!-- <img src="img/after-tablet@1x.png" width="690" height="517" alt="Фото кота"> -->
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+          <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+        </picture>
+    </div>
+
+
+      <div class="game--buttons">
+
         <div class="slidecontainer">
           <div class="slidecontainer__filter">
             <button class="slidecontainer__button" type="button">Было</button>
@@ -102,9 +119,9 @@
             <div class="slidecontainer__scale">
               <div class="slidecontainer__bar"></div>
               </div>
-              <div class="slidecontainer__toggle" tabindex="0"></div>
-              </div>
-              <button class="slidecontainer__button" type="button">Стало</button>
+            <div class="slidecontainer__toggle" tabindex="0"></div>
+            </div>
+          <button class="slidecontainer__button" type="button">Стало</button>
         </div>
       </div>
     </div>

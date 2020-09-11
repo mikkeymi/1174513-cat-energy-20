@@ -28,10 +28,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+    margin-left: 53px;
   }
 }
 
 .slidecontainer__range-controls {
+  position: relative;
   width: 86px;
   margin: 0 8px;
 
@@ -57,15 +59,14 @@
 }
 
 .slidecontainer__range-controls .slidecontainer__toggle {
-  position: absolute;
-  width: 10px;
-  height: 50px;
+  width: 50px;
+  height: 10px;
   background-color: $accent-green;
-  transform: rotate(90deg);
-  top: -12px;
-  left: 120px;
+  top: 3px;
+  left: 4px;
   border: 2px solid $white;
   border-radius: 300px;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -76,7 +77,19 @@
     border: 13px solid $white;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: -17px;
     box-shadow: 0 0 2px 2px rgba(205,205,205,1);
     left: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 100vw;
+      bottom: -70px;
+      z-index: -1;
+      height: 462px;
+      background-color: #eaeaea;
+    }
   }
 }

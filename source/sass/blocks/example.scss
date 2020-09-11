@@ -1,13 +1,19 @@
 .example {
   background: #eaeaea;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     background: #ffffff;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
     border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
   }
 }
 
@@ -16,6 +22,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.example__box {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-right: 134px;
+    flex-shrink: 0;
   }
 }
 
@@ -28,7 +42,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 50%;
   }
 }
 
@@ -113,11 +126,12 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 3px;
+    background-color: #f2f2f2;
   }
 }
 
 .example__title {
-  padding-top: 27px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -138,8 +152,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
-    width: 51%;
+    padding-top: 55px;
   }
 }
 
@@ -147,6 +160,7 @@
   text-transform: uppercase;
   margin-top: 36px;
   text-align: center;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
@@ -167,60 +181,23 @@
 }
 
 .example__game {
-  @media (min-width: $tablet-width) {
-  background: #eaeaea;
-  min-height: 620px;
-  position: relative;
-  }
+  width: 734px;
+  flex-shrink: 0;
 }
 
-.example__game--buttons {
+.game--buttons {
   padding-bottom: 28px;
-  margin-top: 62px;
+  margin-top: 29px;
+  margin-left: 36px;
 
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
     margin-top: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
-}
-
-.example__img {
-  margin-top: 20px;
-  // height: 250px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 500px;
-    margin-top: 0;
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 690px;
-    height: 656px;
-  }
-}
-
-.example__img--game {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-    height: 520px;
-    position: absolute;
-    top: 60px;
-    left: 3%;
-    z-index: 3;
-  }
-}
-.kot {
-  position: absolute;
-  left: 8%;
-  z-index: 4;
-  // background-color: red;
 }

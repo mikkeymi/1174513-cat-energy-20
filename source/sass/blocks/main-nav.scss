@@ -75,20 +75,20 @@
 }
 
 
-.main-nav__link--active {
+.main-nav__item--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $accent-green;
     padding-bottom: 5px;
   }
 }
 
-.main-nav--index .main-nav__link {
+.main-nav--index {
   @media (min-width: $desktop-width) {
     color: $white;
   }
 }
 
-.main-nav--index .main-nav__link--active {
+.main-nav__link--active {
   @media (min-width: $desktop-width) {
     padding-bottom: 1px;
     border-bottom: 2px solid $white;
