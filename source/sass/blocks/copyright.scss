@@ -12,6 +12,16 @@
   line-height: 18px;
   margin-top: 10px;
 
+  &:hover svg path {
+    fill: $accent-green;
+  }
+
+  // &:active,
+  // не могу что бы при актив для текста тоже opacity
+  // &:active svg path {
+  //   opacity: 0.3;
+  // }
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     margin-top: -18px;

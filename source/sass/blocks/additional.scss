@@ -49,6 +49,8 @@
     padding-bottom: 18px;
     padding-left: 0;
     padding-right: 0;
+    // text-align: left;
+    // как?(
   }
 }
 
@@ -94,6 +96,12 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 10px;
+      padding-left: 30px;
+      margin-left: -30px;
+
+      &::before {
+        margin-top: 23px;
+      }
     }
   }
 }
@@ -116,7 +124,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    margin-right: 40px;
+    // margin-right: 40px;
     justify-content: space-between;
     margin-left: auto;
   }
@@ -140,7 +148,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
+    // text-align: left;
+    margin-right: 50px;
   }
 }
 

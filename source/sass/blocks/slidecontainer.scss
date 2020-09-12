@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 0;
+    // margin-top: 3px;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
@@ -24,17 +24,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  margin-top: -4px;
+  margin-left: -20px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 33px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
     margin-left: 53px;
   }
 }
 
 .slidecontainer__range-controls {
   position: relative;
-  width: 86px;
+  width: 108px;
   margin: 0 8px;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +94,7 @@
       position: absolute;
       left: 50%;
       width: 100vw;
-      bottom: -70px;
+      bottom: -90px;
       z-index: -1;
       height: 462px;
       background-color: #eaeaea;

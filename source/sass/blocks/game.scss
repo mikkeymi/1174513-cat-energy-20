@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-left: -38px;
 
   img {
     width: 100%;
@@ -29,6 +30,23 @@
   }
 }
 
+.game__buttons {
+  padding-bottom: 28px;
+  margin-top: 29px;
+  margin-left: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 64px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+
 .game__img--after {
   width: 0%;
 
@@ -38,7 +56,11 @@
   }
 
   img {
-    margin-right: 30px;
+    margin-right: 17px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 43px;
+    }
   }
 }
 
@@ -47,9 +69,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: start;
-    width: 50%;
+    width: 46%;
     min-width: 10px;
-    // margin-right: 100px;
-    // не могу подвинуть кота он скидывается
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
   }
 }

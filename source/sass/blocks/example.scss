@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background: #ffffff;
-    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
     border-top: 1px solid #e6e6e6;
   }
 
@@ -13,6 +13,7 @@
     border: none;
     overflow: hidden;
     position: relative;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
     z-index: 0;
   }
 }
@@ -28,7 +29,7 @@
 .example__box {
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin-right: 134px;
+    margin-right: 116px;
     flex-shrink: 0;
   }
 }
@@ -57,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 42px;
+    margin-top: 44px;
   }
 }
 
@@ -141,7 +142,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
-    padding-top: 45px;
+    padding-top: 66px;
     padding-bottom: 76px;
   }
 }
@@ -160,7 +161,7 @@
   text-transform: uppercase;
   margin-top: 36px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
@@ -183,21 +184,6 @@
 .example__game {
   width: 734px;
   flex-shrink: 0;
-}
-
-.game--buttons {
-  padding-bottom: 28px;
-  margin-top: 29px;
-  margin-left: 36px;
-
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
+  margin-left: 18px;
+  padding-top: 8px;
 }

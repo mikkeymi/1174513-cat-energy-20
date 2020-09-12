@@ -90,7 +90,7 @@
 
 .main-nav__link--active {
   @media (min-width: $desktop-width) {
-    padding-bottom: 1px;
+    padding-bottom: 5px;
     border-bottom: 2px solid $white;
   }
 }

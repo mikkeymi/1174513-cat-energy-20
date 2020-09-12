@@ -8,13 +8,12 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    // padding-top: 0;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-top: 79px;
+    margin-top: 84px;
   }
 }
 
@@ -58,6 +57,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 160px;
+    padding-top: 77px;
   }
 }
 

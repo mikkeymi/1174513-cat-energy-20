@@ -81,6 +81,11 @@
     border-color: #444444;
   }
 
+  &:active svg path {
+    fill: $accent-green;
+    // не получается((
+  }
+
   &:invalid {
     border-color: #ff8282;
   }
