@@ -1,14 +1,20 @@
 .example {
   background: #eaeaea;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     background: #ffffff;
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
     border-top: 1px solid #e6e6e6;
-    // padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
     border: none;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+    z-index: 0;
   }
 }
 
@@ -17,6 +23,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.example__box {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-right: 116px;
+    flex-shrink: 0;
   }
 }
 
@@ -29,7 +43,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 50%;
   }
 }
 
@@ -45,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 42px;
+    margin-top: 44px;
   }
 }
 
@@ -80,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    margin-top: 0;
+    margin-top: -3px;
 
     &:first-child {
       margin-right: 42px;
@@ -114,11 +127,12 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 3px;
+    background-color: #f2f2f2;
   }
 }
 
 .example__title {
-  padding-top: 27px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -128,7 +142,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
-    padding-top: 45px;
+    padding-top: 63px;
     padding-bottom: 76px;
   }
 }
@@ -139,8 +153,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
-    width: 51%;
+    padding-top: 55px;
   }
 }
 
@@ -148,6 +161,7 @@
   text-transform: uppercase;
   margin-top: 36px;
   text-align: center;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
@@ -155,6 +169,7 @@
     line-height: 30px;
     text-align: right;
     right: 0;
+    margin-top: 35px;
     margin-bottom: 4px;
   }
 
@@ -166,41 +181,9 @@
   }
 }
 
-.example__game--buttons {
-  display: flex;
-  padding-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 73px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
-}
-
-.example__game-button {
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif, $base-font;
-  font-size: 16px;
-  align-items: center;
-  outline: none;
-  border: none;
-  background: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.example__img {
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 630px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 690px;
-    height: 656px;
-  }
+.example__game {
+  width: 734px;
+  flex-shrink: 0;
+  margin-left: 18px;
+  padding-top: 8px;
 }

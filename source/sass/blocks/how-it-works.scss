@@ -9,6 +9,8 @@
 .how-it-works__list {
   list-style: none;
   padding: 0;
+  counter-reset: section;
+
 
   @media (min-width: $tablet-width) {
     margin-top: 53px;
@@ -25,7 +27,7 @@
     margin-top: 52px;
     grid-column-gap: 75px;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 61px;
   }
 }
 
@@ -44,7 +46,25 @@
 }
 
 .how-it-works__item {
+  position: relative;
   padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      counter-increment: section;
+      content: counter(section);
+      font-size: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      left: 35%;
+      top: 110px;
+      z-index: 3;
+
+      @media (min-width: $desktop-width) {
+        left: 45%;
+      }
+    }
+  }
 
   &::before {
     content: "";
@@ -119,14 +139,11 @@
   margin-left: 80px;
   margin-top: 5px;
   position: relative;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-top: 110px;
     width: 250px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-top: 30;
   }
 }

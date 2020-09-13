@@ -1,5 +1,5 @@
 .main-promo {
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, #68b738 305px, white 305px);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, #60a139 305px, white 305px);
   background-repeat: no-repeat;
   background-position: 50% 0;
   position: relative;
@@ -24,7 +24,7 @@
       width: 50%;
       height: calc(100% + 200px);
 
-      background-color: $accent-green;
+      background-color: #60a139;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: 100% 100%;
       background-repeat: no-repeat;
@@ -137,6 +137,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 2px;
-    margin-top: 32px;
+    margin-top: 29px;
   }
 }

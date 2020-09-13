@@ -2,19 +2,30 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 .form-note__note {
   font-size: 14px;
   line-height: 18px;
   font-family: $base-font;
+  margin-top: 18px;
+  margin-left: 63px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 91px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    margin-bottom: 0;
+    margin-top: 18px;
+    margin-left: 81px;
   }
 }
 
@@ -22,14 +33,17 @@
   width: 280px;
   height: 40px;
   padding: 7px 44px 7px 44px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 282px;
     height: 52px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 562px;
+    width: 569px;
     height: 52px;
+    opacity: 0.5;
   }
 }
