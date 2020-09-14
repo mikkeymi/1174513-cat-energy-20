@@ -109,8 +109,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // line-height: 22px;
-    // padding-top: 23px;
     margin-top: 24px;
   }
 }
@@ -263,10 +261,6 @@
     width: 167px;
     margin-top: 28px;
   }
-
-  @media (min-width: $desktop-width) {
-    // margin-top: 100px;
-  }
 }
 
 .catalog__img img {
@@ -286,6 +280,6 @@
 
   @media (min-width: $desktop-width) {
     height: 201px;
-    // margin-top: -140px;
+    // width: 175px;
   }
 }
