@@ -1,7 +1,6 @@
 .owner {
   margin: 0;
   padding: 0;
-  // position: relative;
 }
 
 .owner__box {
@@ -81,12 +80,15 @@
     border-color: #444444;
   }
 
-  &:active svg path {
+  &:active + svg path {
     fill: $accent-green;
-    // не получается((
   }
 
   &:invalid {
+    border-color: #ff8282;
+  }
+
+  &:invalid + svg path {
     border-color: #ff8282;
   }
 
