@@ -4,8 +4,13 @@
   background-position: 50% 0;
   position: relative;
 
+
   @media (min-width: $tablet-width) {
     background-image: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -13,6 +18,10 @@
   .main-promo {
     z-index: 0;
     padding-bottom: 185px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
 
     &::before {
       content: "";
@@ -98,7 +107,6 @@
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
-    // position: absolute;
     width: 709px;
     height: 609px;
     top: 130px;
