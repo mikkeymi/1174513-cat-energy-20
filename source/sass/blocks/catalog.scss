@@ -109,8 +109,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // line-height: 22px;
-    // padding-top: 23px;
     margin-top: 24px;
   }
 }
@@ -282,5 +280,6 @@
 
   @media (min-width: $desktop-width) {
     height: 201px;
+    // width: 175px;
   }
 }
