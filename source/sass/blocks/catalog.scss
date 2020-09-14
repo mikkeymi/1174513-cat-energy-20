@@ -265,6 +265,7 @@
 
 .catalog__img img {
   display: block;
+  max-width: none;
 }
 
 .catalog__img {
@@ -280,6 +281,5 @@
 
   @media (min-width: $desktop-width) {
     height: 201px;
-    // width: 175px;
   }
 }
