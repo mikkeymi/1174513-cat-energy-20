@@ -1,6 +1,5 @@
 .additional {
   @include wrapper;
-  // position: relative;
 }
 
 .additional__grid {
@@ -148,7 +147,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // text-align: left;
     margin-right: 50px;
   }
 }

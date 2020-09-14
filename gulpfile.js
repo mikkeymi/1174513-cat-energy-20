@@ -57,6 +57,8 @@ const images = () => {
             imagemin.mozjpeg({progressive: true}),
             imagemin.svgo()
 ]))
+         .pipe(gulp.dest("build/img"));
+         //кладет в билд
 }
 exports.images = images;
 
@@ -66,14 +68,14 @@ exports.images = images;
 
 const copy = () => {
   return gulp.src([
+    "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"));
 };
 exports.copy = copy;
 

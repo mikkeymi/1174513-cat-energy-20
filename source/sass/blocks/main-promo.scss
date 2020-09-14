@@ -4,17 +4,18 @@
   background-position: 50% 0;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
 
   @media (min-width: $tablet-width) {
     background-image: none;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .main-promo {
     z-index: 0;
     padding-bottom: 185px;
@@ -121,11 +122,17 @@
     height: 499px;
     top: 23px;
     left: 50%;
-    margin-left: 70px;
+    margin-left: 36px;
     transform: translateX(-38%);
   }
 }
 
+
+.main-promo__img img {
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
 .main-promo__button {
   display: block;
   width: 280px;
