@@ -36,6 +36,14 @@
     left: 0;
     right: 0;
     margin-top: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 23px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -46,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 75px;
   }
 }

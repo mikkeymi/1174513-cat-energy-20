@@ -10,6 +10,7 @@
   list-style: none;
   padding: 0;
   counter-reset: section;
+  // padding-bottom: 12px;
 
 
   @media (min-width: $tablet-width) {
@@ -48,6 +49,7 @@
 .how-it-works__item {
   position: relative;
   padding-top: 21px;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     &::after {

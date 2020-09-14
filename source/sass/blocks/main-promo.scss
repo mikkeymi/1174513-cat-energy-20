@@ -104,8 +104,6 @@
 }
 
 .main-promo__img {
-  margin-top: 10px;
-
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
@@ -128,6 +126,7 @@
 
 
 .main-promo__img img {
+  margin-top: 10px;
   @media (min-width: $desktop-width) {
     max-width: none;
   }
