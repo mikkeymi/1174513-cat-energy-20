@@ -147,12 +147,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 50px;
+    margin-right: 22px;
+    width: 200px;
+    text-align: left;
+  }
+}
+
+.additional__info--price {
+  @media (min-width: $desktop-width) {
+    width: 60px;
   }
 }
 
 .additional__info:nth-child(2) {
-  margin-left: 50px;
+  margin-left: 22px;
 }
 
 .additional__button {
