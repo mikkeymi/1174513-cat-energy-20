@@ -29,10 +29,18 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 39px;
+    padding-left: 40px;
+    margin-left: -40px;
 
     &::before {
       margin-top: 20px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+    vertical-align: middle;
+    display: inline-block;
   }
 }
 
@@ -42,6 +50,16 @@
   min-height: 150px;
   padding: 12px 13px;
   border: 1px solid #e7e7e7;
+  background-color: $white;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+    box-shadow: 0 0 0 1px #444444 inset;
+  }
 
   @media (min-width: $tablet-width) {
     width: 631px;

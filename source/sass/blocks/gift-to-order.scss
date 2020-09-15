@@ -31,7 +31,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   margin-top: 37px;
   display: flex;
   flex-direction: column;
@@ -59,8 +59,8 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    margin-top: 70px;
-    margin-bottom: 75px;
+    margin-top: 65px;
+    margin-bottom: 80px;
     min-height: 200px;
     width: 708px;
     flex-direction: row;
@@ -85,7 +85,7 @@
     margin-bottom: 90px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/gift-photo-destop@2x.jpg");
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
       background-size: 245px 289px;
     }
   }

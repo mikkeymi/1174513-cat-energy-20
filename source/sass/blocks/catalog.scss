@@ -9,7 +9,7 @@
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 57px;
+    margin-top: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,10 +126,6 @@
     width: 140px;
     margin: 0 auto;
     padding-top: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
-    opacity: 0.1;
   }
 }
 

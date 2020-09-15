@@ -42,11 +42,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 23px;
+      margin-top: 22px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    margin-left: -40px;
     margin-top: 60px;
     margin-bottom: 78px;
     padding-right: 40px;
@@ -54,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 75px;
   }
 }
@@ -71,39 +73,41 @@
   }
 }
 
-.owner__box input {
-  flex-grow: 1;
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 0;
-    min-width: 486px;
-  }
-}
-
 .owner__input {
+  flex-grow: 1;
   padding: 7px 11px;
   margin-left: 12px;
   position: relative;
+  height: 46px;
+  background-color: $white;
+  border: 1px solid #e7e7e7;
 
-  &:active {
-    border-color: #444444;
+  &:hover {
+    border: 1px solid #cdcdcd;
   }
 
-  &:active + svg path {
+  &:focus {
+    border-color: #444444;
+    box-shadow: 0 0 0 1px #444444 inset;
+  }
+
+  &:focus + svg path {
     fill: $accent-green;
   }
 
-  &:invalid {
-    border-color: #ff8282;
-  }
-
-  &:invalid + svg path {
-    border-color: #ff8282;
-  }
-
   @media (min-width: $tablet-width) {
-    margin-left: 20px;
-    padding: 8px 19px;
+    margin-left: 17px;
+    padding: 8px 20px;
+    height: 52px;
+  }
+}
+
+.owner__input--invalid {
+  border-color: #ff8282;
+  box-shadow: 0 0 0 1px #ff8282 inset;
+
+  & + svg path {
+    fill: #ff8282;
   }
 }
 
@@ -117,4 +121,9 @@
   @media (min-width: $tablet-width) {
     height: 45px;
   }
+}
+
+.owner__input::placeholder {
+  color: #444444;
+  opacity: 1;
 }

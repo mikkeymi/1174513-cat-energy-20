@@ -58,8 +58,9 @@
 
 .page-header__logo img {
   @media (min-width: $tablet-width) {
+    margin-top: -4px;
     width: 174px;
-    height: 51px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,6 +85,10 @@
 
 .page-header__button--close {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__button--close::before {
@@ -103,6 +108,10 @@
 
 .page-header__button--open {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &::before,
   &::after {

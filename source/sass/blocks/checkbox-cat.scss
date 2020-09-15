@@ -70,8 +70,12 @@
   top: -5px;
   width: 30px;
   height: 30px;
-  border: 2px solid #d9d9d9;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -93,7 +97,7 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: 5px;
+    top: 6px;
     left: -52px;
   }
 }

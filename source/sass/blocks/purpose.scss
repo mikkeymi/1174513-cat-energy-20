@@ -207,6 +207,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &:hover::after {
+      width: 32px;
+      content: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 

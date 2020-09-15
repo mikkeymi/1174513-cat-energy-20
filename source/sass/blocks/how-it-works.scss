@@ -10,9 +10,11 @@
   list-style: none;
   padding: 0;
   counter-reset: section;
+  padding-bottom: 29px;
 
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
     margin-top: 53px;
     margin-bottom: 102px;
     grid-row-gap: 114px;
@@ -33,7 +35,7 @@
 
 .how-it-works__title {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -51,13 +53,15 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 19px;
+
     &::after {
       counter-increment: section;
       content: counter(section);
       font-size: 280px;
       color: #f2f2f2;
       position: absolute;
-      left: 35%;
+      left: 39%;
       top: 110px;
       z-index: 3;
 
@@ -77,10 +81,7 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-top: -4px;
+      margin-top: 0;
     }
   }
 }
