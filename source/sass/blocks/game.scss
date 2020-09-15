@@ -40,7 +40,7 @@
 
 .game__buttons {
   padding-bottom: 28px;
-  margin-top: 29px;
+  margin-top: 25px;
   margin-left: 36px;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   img {

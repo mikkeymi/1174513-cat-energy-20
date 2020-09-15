@@ -47,6 +47,14 @@
 .page-footer__link {
   margin-right: 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 35px;
   }
@@ -80,7 +88,7 @@
     left: calc(50% - 610px);
     z-index: 3;
     padding-left: 74px;
-    padding-right: 74px;
+    padding-right: 84px;
   }
 }
 

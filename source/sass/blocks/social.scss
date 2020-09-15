@@ -1,4 +1,4 @@
-.social__list {
+.social {
   padding: 0;
   list-style: none;
   margin: 0 auto;
@@ -22,7 +22,7 @@
   }
 }
 
-.social__list li {
+.social li {
   margin: 0 7px;
 
   @media (min-width: $tablet-width) {

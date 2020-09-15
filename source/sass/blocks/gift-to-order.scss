@@ -37,6 +37,11 @@
   flex-direction: column;
   padding-top: 64px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px 289px;
+  }
+
   &::before {
     content: url("../img/icon-gift.svg");
     width: 60px;
@@ -63,6 +68,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
     }
   }
 
@@ -80,6 +86,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-destop@2x.jpg");
+      background-size: 245px 289px;
     }
   }
 }

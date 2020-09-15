@@ -123,7 +123,6 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    // margin-right: 40px;
     justify-content: space-between;
     margin-left: auto;
   }
@@ -144,6 +143,7 @@
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+    // padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,7 +160,13 @@
 }
 
 .additional__info:nth-child(2) {
-  margin-left: 22px;
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 22px;
+  }
 }
 
 .additional__button {

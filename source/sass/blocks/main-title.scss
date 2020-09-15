@@ -1,0 +1,24 @@
+.main-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.main-title--form {
+  @include wrapper;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+  }
+}

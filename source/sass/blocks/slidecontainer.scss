@@ -1,6 +1,6 @@
 .slidecontainer__button {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif, $base-font;
+  font-family: $special-font;
   font-size: 16px;
   align-items: center;
   outline: none;
@@ -14,6 +14,14 @@
     padding: 0;
     padding-bottom: 5px;
     border-bottom: 1px dotted #dcdcdc;
+
+    &:hover {
+      border-bottom: 2px solid  #dcdcdc;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -66,7 +74,7 @@
 }
 
 .slidecontainer__range-controls .slidecontainer__toggle {
-  width: 50px;
+  width: 45px;
   height: 10px;
   background-color: $accent-green;
   top: 3px;
@@ -87,6 +95,10 @@
     margin-left: -17px;
     box-shadow: 0 0 2px 2px rgba(205, 205, 205, 1);
     left: 50%;
+
+    &:active {
+      box-shadow: 0 0 2px 2px #68b738;
+    }
 
     &::after {
       content: "";

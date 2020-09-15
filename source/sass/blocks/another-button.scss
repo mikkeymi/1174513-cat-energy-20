@@ -10,16 +10,11 @@
   padding: 20px 20px 20px 20px;
   margin-top: auto;
 
-  @media (min-width: $tablet-width) {
-    // width: 280px;
-    // margin: 0 auto;
+  &:hover {
+    background-color: #ebebeb;
   }
-}
 
-.button:hover {
-  background-color: #5eaa2f;
-}
-
-.button:active {
-  color: rgba($white, 0.3);
+  &:active {
+    opacity: 0.3;
+  }
 }

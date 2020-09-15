@@ -46,6 +46,16 @@
   }
 }
 
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__logo img {
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -79,8 +89,8 @@
 .page-header__button--close::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 8px;
+  top: 12px;
+  left: 15px;
   width: 24px;
   height: 1px;
   background-color: $black;

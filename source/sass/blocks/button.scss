@@ -5,13 +5,19 @@
   background-color: $accent-green;
   text-decoration: none;
   text-transform: uppercase;
-  // font-size: 14px;
   line-height: 18px;
   text-align: center;
   font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    // font-size: 20px;
     line-height: 0px;
   }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba($white, 0.3);
 }
