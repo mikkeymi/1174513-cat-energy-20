@@ -14,7 +14,7 @@
   font-family: $base-font;
   margin-top: 22px;
   margin-left: 63px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -44,6 +44,5 @@
   @media (min-width: $desktop-width) {
     width: 569px;
     height: 52px;
-    opacity: 0.5;
   }
 }
